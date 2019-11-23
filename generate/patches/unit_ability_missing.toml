@@ -144,12 +144,12 @@ requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 ability = 797
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 
-[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
-ability = 800
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
-
 [[5]] # TechLab RESEARCH_BANSHEECLOAKINGFIELD
 ability = 790
+requirements = [ { "addon_to" = 28 } ] # Add-on to startport
+
+[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
+ability = 800
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 
 [[39]] # FactoryTechlab RESEARCH_DRILLINGCLAWS

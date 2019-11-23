@@ -1,41 +1,20 @@
 # StarCraft II tech tree and dependencies
 
-All SC2 structures, units, abilities, researches and dependencies between these, in machine readable JSON format and with nice graphs.
-Also a Rust libarary for querying the data.
+All SC2 structures, units, abilities, researches and dependencies between these, in machine readable JSON format.
 
-![Schema Plan](./docs/images/SchemaPlan.png)
-
-This repository contains Python scripts for data generation, and
-a Rust library for data validation, queries and overall usage.
-
-## "I want to look at the cool graphs!"
-
-See [visuals page](./docs/Visuals.md), or [the image files](./docs/images).
-
-## "I want to use this with my bot!"
-
-If using Rust, this repostory contains a nice library to query the data.
-
-If not, you can still grab the [raw json data](./data/data.json), which
-contains all raw information. Unfortunately, you need to query the data
-manually. Unless you find or create a library that does it for you.
+This repository contains Python scripts for data generation.
 
 # Development
 
-You need `cargo` (Rust nightly), `python3.7` or newer + `pipenv`, `jq` and `graphviz` (`dot` command).
+You need `python3.7` or newer + `pipenv`.
 
+The Python code to generate new data is under `generate`.
 
-The Python code to generate new data is under `generate`, and
-the Rust library is naturally under `src`.
-
-See `Makefile` for usage, particularly `make run` and `make update`.
-
-See [schema plan file](./docs/SchemaPlan.txt) for the idealistic schema.
-
+You can just run `pipenv run run.py` to generate new `/data/data.json`.
 
 # Missing data? Invalid data? Other issues?
 
-Please [open a new issue in GitHub](https://github.com/Dentosal/sc2-techtree/issues/new).
+Please [open a new issue in GitHub](https://github.com/BurnySc2/sc2-techtree/issues/new).
 
 Pull requests to fix things or for extensions are welcome as well,
 although I suggest asking me first by opening an issue or otherwise.

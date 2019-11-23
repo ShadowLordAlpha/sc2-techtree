@@ -19953,7 +19953,7 @@
                     ]
                 },
                 {
-                    "ability": 800,
+                    "ability": 790,
                     "requirements": [
                         {
                             "addon_to": 28
@@ -19961,7 +19961,7 @@
                     ]
                 },
                 {
-                    "ability": 790,
+                    "ability": 800,
                     "requirements": [
                         {
                             "addon_to": 28
