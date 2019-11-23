@@ -5,9 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 black = "*"
+monkeytype = "*"
 
 [packages]
-sc2 = "*"
+burnysc2 = "*"
 toml = "*"
 
 [requires]

@@ -8,11 +8,13 @@ from sc2.ids.ability_id import AbilityId
 SOURCE_DIR = Path("generated") / "collect"
 T_TOML_DIR = Path("generated") / "patched"
 TARGET_DIR = Path("generated") / "results"
+DATA_DIR = Path("data")
 
 
 def patch():
     assert SOURCE_DIR.exists()
     TARGET_DIR.mkdir(exist_ok=True)
+    T_TOML_DIR.mkdir(exist_ok=True)
 
     with (SOURCE_DIR / "ability.toml").open() as f:
         c_ability = toml.load(f)
@@ -64,8 +66,9 @@ def patch():
             else:
                 if abil["target"][k]["produces"] == 0:
                     p = patch_ability_produces_replace.get(str(abil_id))
-                    assert p, f"Missing ability product: [{abil_id}] # {abil_name}"
-                    abil["target"][k]["produces"] = p["produces"]
+                    if p:
+                        # assert p, f"Missing ability product: [{abil_id}] # {abil_name}"
+                        abil["target"][k]["produces"] = p["produces"]
 
     # Patch missing ability products
     for abil in c_ability["Ability"]:
@@ -133,6 +136,12 @@ def patch():
 
     with (TARGET_DIR / "upgrade.json").open("w") as f:
         json.dump(c_upgrade, f, separators=(",", ":"))
+
+    c_data = {**c_ability, **c_unit, **c_upgrade}
+    with (DATA_DIR / "data.json").open("w") as f:
+        json.dump(c_data, f, separators=(",", ":"))
+    with (DATA_DIR / "data_readable.json").open("w") as f:
+        json.dump(c_data, f, separators=(",", ": "), indent=4, sort_keys=True)
 
 
 if __name__ == "__main__":

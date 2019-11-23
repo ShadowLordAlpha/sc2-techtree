@@ -6,6 +6,7 @@
 from pathlib import Path
 
 import toml
+import json
 
 import sc2
 from sc2 import run_game, maps, Race, Difficulty
@@ -121,9 +122,7 @@ class MyBot(sc2.BotAI):
                 # Not in the game anymore
                 return None
 
-            build = {
-                "target": {"Research": {"upgrade": self.upgrade_abilities[real_id]}}
-            }
+            build = {"target": {"Research": {"upgrade": self.upgrade_abilities[real_id]}}}
         elif is_morph:
             if real_id in self.create_abilities:
                 unit_id = self.create_abilities[real_id]
@@ -134,18 +133,14 @@ class MyBot(sc2.BotAI):
                         name = remove_prefix(real_name, prefix)
                         if name in ["SWARMHOST", "LURKER"]:
                             name += "MP"
-                        cands = [
-                            u for u in self.data_units if name == u["name"].upper()
-                        ]
+                        cands = [u for u in self.data_units if name == u["name"].upper()]
                         assert len(cands) == 1, name
                         unit_id = cands[0]["id"]
                         break
                 for infix in SPEC_INFIX:
                     if infix in real_name:
                         name = real_name[: real_name.find(infix)]
-                        cands = [
-                            u for u in self.data_units if name == u["name"].upper()
-                        ]
+                        cands = [u for u in self.data_units if name == u["name"].upper()]
                         assert len(cands) == 1, name
                         unit_id = cands[0]["id"]
                         break
@@ -156,7 +151,7 @@ class MyBot(sc2.BotAI):
                 assert target_name == "None", f"{a.id.name}: {target_name}"
                 build = {"target": {"Morph": {"produces": unit_id}}}
         elif "WARPGATETRAIN_" in a.id.name or "TRAINWARP_ADEPT" == a.id.name:
-            assert target_name == "Point", f"{a.id.name}: {target_name}"
+            # assert target_name == "Point", f"{a.id.name}: {target_name}"
             build = {"target": {"TrainPlace": {"produces": 0}}}
         elif "TRAIN_" in a.id.name or a.id.name == "SPAWNCHANGELING_SPAWNCHANGELING":
             assert target_name == "None", f"{a.id.name}: {target_name}"
@@ -191,22 +186,14 @@ class MyBot(sc2.BotAI):
         return {
             "id": a._proto.upgrade_id,
             "name": a._proto.name,
-            "cost": {
-                "minerals": a._proto.mineral_cost,
-                "gas": a._proto.vespene_cost,
-                "time": a._proto.research_time,
-            },
+            "cost": {"minerals": a._proto.mineral_cost, "gas": a._proto.vespene_cost, "time": a._proto.research_time},
         }
 
     def serialize_buff(self, a):
         return {"id": a._proto.buff_id, "name": a._proto.name}
 
     def serialize_effect(self, a):
-        return {
-            "id": a._proto.effect_id,
-            "name": a._proto.name,
-            "radius": a._proto.radius,
-        }
+        return {"id": a._proto.effect_id, "name": a._proto.name, "radius": a._proto.radius}
 
     def serialize_weapon(self, a):
         return {
@@ -216,10 +203,7 @@ class MyBot(sc2.BotAI):
             "attacks": a.attacks,
             "range": a.range,
             "cooldown": a.speed,
-            "bonuses": [
-                {"against": Attribute.Name(b.attribute), "damage": b.bonus}
-                for b in a.damage_bonus
-            ],
+            "bonuses": [{"against": Attribute.Name(b.attribute), "damage": b.bonus} for b in a.damage_bonus],
         }
 
     def serialize_unit(self, a):
@@ -228,17 +212,7 @@ class MyBot(sc2.BotAI):
 
         nl = a.name.lower()
         if any(
-            w in nl
-            for w in [
-                "bridge",
-                "weapon",
-                "missile",
-                "preview",
-                "dummy",
-                "test",
-                "alternate",
-                "broodlingescort",
-            ]
+            w in nl for w in ["bridge", "weapon", "missile", "preview", "dummy", "test", "alternate", "broodlingescort"]
         ):
             return None
 
@@ -253,8 +227,10 @@ class MyBot(sc2.BotAI):
         is_townhall = a.id in {
             UnitTypeId.NEXUS,
             UnitTypeId.COMMANDCENTER,
+            UnitTypeId.COMMANDCENTERFLYING,
             UnitTypeId.PLANETARYFORTRESS,
             UnitTypeId.ORBITALCOMMAND,
+            UnitTypeId.ORBITALCOMMANDFLYING,
             UnitTypeId.HATCHERY,
             UnitTypeId.LAIR,
             UnitTypeId.HIVE,
@@ -270,7 +246,7 @@ class MyBot(sc2.BotAI):
             UnitTypeId.STARPORTTECHLAB,
         }
 
-        needs_gayser = a.id in {
+        needs_geyser = a.id in {
             UnitTypeId.ASSIMILATOR,
             UnitTypeId.REFINERY,
             UnitTypeId.EXTRACTOR,
@@ -302,13 +278,11 @@ class MyBot(sc2.BotAI):
                 UnitTypeId.HIVE,
                 UnitTypeId.EXTRACTOR,
                 UnitTypeId.EXTRACTORRICH,
+                UnitTypeId.SPINECRAWLERUPROOTED,
+                UnitTypeId.SPORECRAWLERUPROOTED,
             }
         )
-        accepts_addon = a.id in {
-            UnitTypeId.BARRACKS,
-            UnitTypeId.FACTORY,
-            UnitTypeId.STARPORT,
-        }
+        accepts_addon = a.id in {UnitTypeId.BARRACKS, UnitTypeId.FACTORY, UnitTypeId.STARPORT}
 
         return {
             "id": a.id.value,
@@ -335,14 +309,14 @@ class MyBot(sc2.BotAI):
             "accepts_addon": accepts_addon,
             "needs_power": needs_power,
             "needs_creep": needs_creep,
-            "needs_gayser": needs_gayser,
+            "needs_geyser": needs_geyser,
             "is_structure": is_structure,
             "is_addon": is_addon,
             "is_worker": is_worker,
             "is_townhall": is_townhall,
         }
 
-    def on_start(self):
+    async def on_start(self):
         for id, a in self._game_data.upgrades.items():
             if a._proto.name != "" and a._proto.HasField("research_time"):
                 self.data_upgrades.append(self.serialize_upgrade(a))
@@ -408,6 +382,20 @@ class MyBot(sc2.BotAI):
 
         if self.__state == "Empty":
             if len(self.unit_queue) == 0:
+                # with (TARGET_DIR / "upgrade.json").open("w") as f:
+                #     f.write(json.dumps({"Upgrade": self.data_upgrades}, indent=4))
+                # with (TARGET_DIR / "unit.json").open("w") as f:
+                #     f.write(json.dumps({"Unit": self.data_units}, indent=4))
+                # with (TARGET_DIR / "ability.json").open("w") as f:
+                #     f.write(json.dumps({"Ability": self.data_abilities}, indent=4))
+
+                data: dict = {"Upgrade": self.data_upgrades, "Ability": self.data_abilities, "Unit": self.data_units}
+
+                with (TARGET_DIR / "data_readable.json").open("w") as f:
+                    f.write(json.dumps(data, indent=4, sort_keys=True))
+                with (TARGET_DIR / "data.json").open("w") as f:
+                    f.write(json.dumps(data, sort_keys=True))
+
                 with (TARGET_DIR / "upgrade.toml").open("w") as f:
                     f.write(toml.dumps({"Upgrade": self.data_upgrades}))
 
@@ -422,67 +410,48 @@ class MyBot(sc2.BotAI):
 
             print("Units left:", len(self.unit_queue))
             self.current_unit = self.unit_queue.pop()
-            await self._client.debug_create_unit(
-                [[UnitTypeId(self.current_unit), 1, self._game_info.map_center, 1]]
-            )
+            await self._client.debug_create_unit([[UnitTypeId(self.current_unit), 1, self._game_info.map_center, 1]])
 
             self.time_left = 10
             self.__state = "WaitCreate"
 
         elif self.__state == "WaitCreate":
-            if len(self.units) == 0 and self.current_unit == UnitTypeId.LARVA.value:
+            if len(self.all_own_units) == 0 and self.current_unit == UnitTypeId.LARVA.value:
                 # Larva cannot be created without a hatchery
-                await self._client.debug_create_unit(
-                    [[UnitTypeId.HATCHERY, 1, self._game_info.map_center, 1]]
-                )
+                await self._client.debug_create_unit([[UnitTypeId.HATCHERY, 1, self._game_info.map_center, 1]])
                 self.wait_steps = 10
                 return
-            elif len(self.units) == 0:
+            elif len(self.all_own_units) == 0:
                 self.time_left -= 1
                 if self.time_left < 0:
-                    index = [
-                        i
-                        for i, u in enumerate(self.data_units)
-                        if u["id"] == self.current_unit
-                    ][0]
+                    index = [i for i, u in enumerate(self.data_units) if u["id"] == self.current_unit][0]
                     del self.data_units[index]
                     self.__state = "Clear"
             else:
-                cands = [
-                    u for u in self.units if u._proto.unit_type == self.current_unit
-                ]
+                cands = [u for u in self.all_own_units if u._proto.unit_type == self.current_unit]
                 if len(cands) == 0:
                     # Check for some allowed specialization
-                    su = self.units.first.name.upper()
+                    su = self.all_own_units.first.name.upper()
                     lu = UnitTypeId(self.current_unit).name.upper()
-                    if len(self.units) == 1 and (
-                        su in lu or all(n.startswith("CREEPTUMOR") for n in (su, lu))
-                    ):
-                        unit = self.units.first
+                    if len(self.all_own_units) == 1 and (su in lu or all(n.startswith("CREEPTUMOR") for n in (su, lu))):
+                        unit = self.all_own_units.first
                     else:
                         assert (
                             False
-                        ), f"Invalid self.units (looking for {UnitTypeId(self.current_unit) !r}): {self.units}"
+                        ), f"Invalid self.all_own_units (looking for {UnitTypeId(self.current_unit) !r}): {self.all_own_units}"
                 else:
                     unit = cands[0]
                 assert unit.is_ready
-                index = [
-                    i
-                    for i, u in enumerate(self.data_units)
-                    if u["id"] == self.current_unit
-                ][0]
+                index = [i for i, u in enumerate(self.data_units) if u["id"] == self.current_unit][0]
 
-                if self.current_unit in [
-                    UnitTypeId.CREEPTUMOR.value,
-                    UnitTypeId.CREEPTUMORQUEEN.value,
-                ]:
+                if self.current_unit in [UnitTypeId.CREEPTUMOR.value, UnitTypeId.CREEPTUMORQUEEN.value]:
                     # TODO: Handle this properly
                     # Creep tumors automatically burrow when complete
                     # CREEPTUMORBURROWED
                     pass
                 elif self.current_unit == UnitTypeId.LARVA.value:
                     # Larva must be selected
-                    unit = self.units(UnitTypeId.LARVA).first
+                    unit = self.all_own_units(UnitTypeId.LARVA).first
                 elif self.current_unit in [
                     UnitTypeId.BARRACKSTECHLAB.value,
                     UnitTypeId.BARRACKSREACTOR.value,
@@ -494,33 +463,20 @@ class MyBot(sc2.BotAI):
                     # Reactors and tech labs are not really part of the building,
                     # so to get the abilities an appropriate building must be added.
                     # Bare Reactor and TechLab have no abilities, so not matching them here.
-                    if self.current_unit in [
-                        UnitTypeId.BARRACKSTECHLAB.value,
-                        UnitTypeId.BARRACKSREACTOR.value,
-                    ]:
+                    if self.current_unit in [UnitTypeId.BARRACKSTECHLAB.value, UnitTypeId.BARRACKSREACTOR.value]:
                         ut = UnitTypeId.BARRACKS
-                    elif self.current_unit in [
-                        UnitTypeId.FACTORYTECHLAB.value,
-                        UnitTypeId.FACTORYREACTOR.value,
-                    ]:
+                    elif self.current_unit in [UnitTypeId.FACTORYTECHLAB.value, UnitTypeId.FACTORYREACTOR.value]:
                         ut = UnitTypeId.FACTORY
-                    elif self.current_unit in [
-                        UnitTypeId.STARPORTTECHLAB.value,
-                        UnitTypeId.STARPORTREACTOR.value,
-                    ]:
+                    elif self.current_unit in [UnitTypeId.STARPORTTECHLAB.value, UnitTypeId.STARPORTREACTOR.value]:
                         ut = UnitTypeId.STARPORT
                     else:
                         assert False, f"Type? {unit.type_id.name}"
 
-                    if len(self.units) > 1:
-                        assert len(self.units) == 2 and all(
-                            u.is_ready for u in self.units
-                        )
+                    if len(self.all_own_units) > 1:
+                        assert len(self.all_own_units) == 2 and all(u.is_ready for u in self.all_own_units)
                         # Building and addon both created
                     else:
-                        await self._client.debug_create_unit(
-                            [[ut, 1, self._game_info.map_center, 1]]
-                        )
+                        await self._client.debug_create_unit([[ut, 1, self._game_info.map_center, 1]])
                         await self._client.debug_kill_unit([unit.tag])
                         self.wait_steps = 100
                         self.__state = "BuildAddOn"
@@ -528,21 +484,17 @@ class MyBot(sc2.BotAI):
                 elif self.data_units[index]["needs_power"]:
                     # Build pylon for protoss buildings that need it
 
-                    if len(self.units) > 1:
-                        assert len(self.units) == 2, f"Units: {self.units}"
-                        assert all(u.is_ready for u in self.units)
+                    if len(self.all_own_units) > 1:
+                        assert len(self.all_own_units) == 2, f"Units: {self.all_own_units}"
+                        assert all(u.is_ready for u in self.all_own_units)
                         assert len(self.state.psionic_matrix.sources) == 1
                         # Pylon already created
                     else:
                         if self.current_unit == UnitTypeId.GATEWAY.value:
                             # Disable autocast of warpgate morph
-                            await self._client.toggle_autocast(
-                                [unit], AbilityId.MORPH_WARPGATE
-                            )
+                            await self._client.toggle_autocast([unit], AbilityId.MORPH_WARPGATE)
 
-                        await self._client.debug_create_unit(
-                            [[UnitTypeId.PYLON, 1, self._game_info.map_center, 1]]
-                        )
+                        await self._client.debug_create_unit([[UnitTypeId.PYLON, 1, self._game_info.map_center, 1]])
 
                         self.wait_steps = 200
                         return
@@ -551,22 +503,12 @@ class MyBot(sc2.BotAI):
                         self.current_unit == unit.type_id.value
                     ), f"{self.current_unit} == {unit.type_id.value} ({unit.type_id})"
 
-                self.data_units[index]["cargo_capacity"] = if_nonzero(
-                    unit._proto.cargo_space_max
-                )
+                self.data_units[index]["cargo_capacity"] = if_nonzero(unit._proto.cargo_space_max)
                 self.data_units[index]["max_health"] = unit._proto.health_max
-                self.data_units[index]["max_shield"] = if_nonzero(
-                    unit._proto.shield_max
-                )
-                self.data_units[index]["detection_range"] = if_nonzero(
-                    unit._proto.detect_range
-                )
-                self.data_units[index]["start_energy"] = if_nonzero(
-                    unit._proto.energy, int
-                )
-                self.data_units[index]["max_energy"] = if_nonzero(
-                    unit._proto.energy_max
-                )
+                self.data_units[index]["max_shield"] = if_nonzero(unit._proto.shield_max)
+                self.data_units[index]["detection_range"] = if_nonzero(unit._proto.detect_range)
+                self.data_units[index]["start_energy"] = if_nonzero(unit._proto.energy, int)
+                self.data_units[index]["max_energy"] = if_nonzero(unit._proto.energy_max)
                 self.data_units[index]["radius"] = if_nonzero(unit._proto.radius)
                 # TODO: "placement_size" for buildings
 
@@ -578,20 +520,14 @@ class MyBot(sc2.BotAI):
 
                 # Unit abilities
                 try:
-                    abilities = (
-                        await self.get_available_abilities(
-                            [unit], ignore_resource_requirements=True
-                        )
-                    )[0]
+                    abilities = (await self.get_available_abilities([unit], ignore_resource_requirements=True))[0]
 
                     # No requirements when all tech is locked
                     self.data_units[index]["abilities"] = [
                         {"ability": a.value}
                         for a in abilities
                         if self.recognizes_ability(a.value)
-                        and self.ability_specialization_allowed_for(
-                            a.value, unit._proto.unit_type
-                        )
+                        and self.ability_specialization_allowed_for(a.value, unit._proto.unit_type)
                     ]
 
                     # See requirement-depending upgrades with tech
@@ -604,35 +540,25 @@ class MyBot(sc2.BotAI):
                     self.__state = "Clear"
 
         elif self.__state == "BuildAddOn":
-            assert len(self.units) == 1, f"? {self.units}"
-            unit = self.units.first
-            await self.do(unit.build(UnitTypeId(self.current_unit)))
+            assert len(self.all_own_units) == 1, f"? {self.all_own_units}"
+            unit = self.all_own_units.first
+            self.do(unit.build(UnitTypeId(self.current_unit)))
             self.wait_steps = 10
             self.__state = "BuildAddOnWait"
 
         elif self.__state == "BuildAddOnWait":
-            assert len(self.units) == 2, f"? {self.units}"
-            if all(u.is_ready for u in self.units):
+            assert len(self.all_own_units) == 2, f"? {self.all_own_units}"
+            if all(u.is_ready for u in self.all_own_units):
                 self.__state = "WaitCreate"
 
         elif self.__state == "TechCheck":
-            possible_units = [
-                u for u in self.units if u._proto.unit_type == self.current_unit
-            ]
+            possible_units = [u for u in self.all_own_units if u._proto.unit_type == self.current_unit]
             if possible_units:
                 unit = possible_units[0]
                 assert unit.is_ready
-                index = [
-                    i
-                    for i, u in enumerate(self.data_units)
-                    if u["id"] == self.current_unit
-                ][0]
+                index = [i for i, u in enumerate(self.data_units) if u["id"] == self.current_unit][0]
 
-                abilities = (
-                    await self.get_available_abilities(
-                        [unit], ignore_resource_requirements=True
-                    )
-                )[0]
+                abilities = (await self.get_available_abilities([unit], ignore_resource_requirements=True))[0]
 
                 print("#", unit)
                 for a in abilities:
@@ -640,43 +566,37 @@ class MyBot(sc2.BotAI):
                     if not self.recognizes_ability(a.value):
                         continue
 
-                    if not self.ability_specialization_allowed_for(
-                        a.value, unit._proto.unit_type
-                    ):
+                    if not self.ability_specialization_allowed_for(a.value, unit._proto.unit_type):
                         continue
 
-                    if a.value not in [
-                        a["ability"] for a in self.data_units[index]["abilities"]
-                    ]:
-                        self.data_units[index]["abilities"].append(
-                            {"requirements": "???", "ability": a.value}
-                        )
+                    if a.value not in [a["ability"] for a in self.data_units[index]["abilities"]]:
+                        self.data_units[index]["abilities"].append({"requirements": "???", "ability": a.value})
 
             # Switch all tech back off
             await self._client.debug_tech_tree()
             self.__state = "Clear"
 
         elif self.__state == "WaitCreate":
-            if len(self.units) == 0:
+            if len(self.all_own_units) == 0:
                 self.time_left -= 1
                 if self.time_left < 0:
                     self.__state = "Clear"
 
         elif self.__state == "WaitEmpty":
-            if len(self.units) > 0:
+            if len(self.all_own_units) > 0:
                 self.time_left -= 1
                 if self.time_left < 0:
                     assert False, "Clear failed"
                 else:
                     # Kill broodlings etc
-                    for u in self.state.units:
+                    for u in self.all_units:
                         await self._client.debug_kill_unit([u.tag])
                         self.wait_steps = 20
             else:
                 self.__state = "Empty"
 
         if self.__state == "Clear":
-            for u in self.state.units:
+            for u in self.all_units:
                 await self._client.debug_kill_unit([u.tag])
                 self.wait_steps = 20
 
@@ -685,7 +605,9 @@ class MyBot(sc2.BotAI):
             self.time_left = 10
 
     async def on_step(self, iteration):
-        for unit in self.units:
+        # Fix for burnysc2 library
+        self.all_own_units = self.units | self.structures
+        for unit in self.all_own_units:
             self._client.debug_text_world(
                 f"{unit.type_id.name}:{unit.type_id.value}\n({unit.position})",
                 unit.position3d,
@@ -693,7 +615,7 @@ class MyBot(sc2.BotAI):
                 size=12,
             )
 
-        await self._client.send_debug()
+        # await self._client.send_debug()
 
         # Create all units (including structures) to get more info
         if iteration == 0:
