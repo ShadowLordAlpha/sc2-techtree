@@ -17,22 +17,39 @@ from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData, Weapon, Attribute
 from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
 
+from mypy_extensions import TypedDict
 
-def remove_prefix(s, prefix):
+from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
+from typing import Any, Dict, List, Optional, Type, Union
+
+
+class CostTypedDict(TypedDict):
+    gas: int
+    minerals: int
+    time: float
+
+
+class MyBotSerializeUpgradeTypedDict(TypedDict):
+    cost: "CostTypedDict"
+    id: int
+    name: str
+
+
+def remove_prefix(s: str, prefix: str) -> str:
     if s.startswith(prefix):
         return s[len(prefix) :]
     else:
         return s
 
 
-def remove_postfix(s, postfix):
+def remove_postfix(s: str, postfix: str) -> str:
     if s.endswith(postfix):
         return s[: -len(postfix)]
     else:
         return s
 
 
-def if_nonzero(v, fn=None):
+def if_nonzero(v: Union[float, int], fn: Optional[Type[int]] = None) -> Optional[Union[int, float]]:
     if fn:
         return fn(v) if v != 0 else None
     else:
@@ -51,7 +68,7 @@ TARGET_DIR.mkdir(exist_ok=True, parents=True)
 
 
 class MyBot(sc2.BotAI):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.data_upgrades = []
@@ -61,7 +78,7 @@ class MyBot(sc2.BotAI):
         self.upgrade_abilities = {}
         self.create_abilities = {}
 
-    def serialize_ability(self, a):
+    def serialize_ability(self, a: AbilityData) -> Optional[Dict[str, any]]:
         """Return None to skip this."""
 
         # TODO: Buffs
@@ -182,7 +199,7 @@ class MyBot(sc2.BotAI):
             **build,
         }
 
-    def serialize_upgrade(self, a):
+    def serialize_upgrade(self, a: UpgradeData) -> "MyBotSerializeUpgradeTypedDict":
         return {
             "id": a._proto.upgrade_id,
             "name": a._proto.name,
@@ -195,7 +212,7 @@ class MyBot(sc2.BotAI):
     def serialize_effect(self, a):
         return {"id": a._proto.effect_id, "name": a._proto.name, "radius": a._proto.radius}
 
-    def serialize_weapon(self, a):
+    def serialize_weapon(self, a: Weapon) -> Dict[str, Union[int, List[Union[float, str]]]]:
         return {
             "target_type": Weapon.TargetType.Name(a.type),
             "damage_per_hit": a.damage,
@@ -206,7 +223,7 @@ class MyBot(sc2.BotAI):
             "bonuses": [{"against": Attribute.Name(b.attribute), "damage": b.bonus} for b in a.damage_bonus],
         }
 
-    def serialize_unit(self, a):
+    def serialize_unit(self, a: UnitTypeData) -> Any:
         if a._proto.food_provided > 0:
             assert a._proto.food_required == 0
 
@@ -316,7 +333,7 @@ class MyBot(sc2.BotAI):
             "is_townhall": is_townhall,
         }
 
-    async def on_start(self):
+    async def on_start(self) -> None:
         for id, a in self._game_data.upgrades.items():
             if a._proto.name != "" and a._proto.HasField("research_time"):
                 self.data_upgrades.append(self.serialize_upgrade(a))
@@ -340,12 +357,12 @@ class MyBot(sc2.BotAI):
         self.wait_steps = 0
         self.__state = "Empty"
 
-    def recognizes_ability(self, a_id):
+    def recognizes_ability(self, a_id: int) -> bool:
         """Has this ability been added?"""
         assert isinstance(a_id, int)
         return a_id in [int(a["id"]) for a in self.data_abilities]
 
-    def is_specialization(self, abil_name):
+    def is_specialization(self, abil_name: str) -> bool:
         """Is this ability use this a specialization, e.g. LIFT_COMMANDCENTER instead of LIFT."""
         assert isinstance(abil_name, str)
         assert abil_name == abil_name.upper()
@@ -359,7 +376,7 @@ class MyBot(sc2.BotAI):
 
         return False
 
-    def ability_specialization_allowed_for(self, a_id, u_id):
+    def ability_specialization_allowed_for(self, a_id: int, u_id: int) -> bool:
         """Can this unit use this specialization, e.g. do not allow LIFT_COMMANDCENTER for BARRACKS."""
         assert isinstance(a_id, int)
         assert isinstance(u_id, int)
@@ -375,7 +392,7 @@ class MyBot(sc2.BotAI):
 
         return u_name in a_name
 
-    async def state_step(self):
+    async def state_step(self) -> None:
         self.wait_steps -= 1
         if self.wait_steps > 0:
             return
@@ -604,7 +621,7 @@ class MyBot(sc2.BotAI):
             self.__state = "WaitEmpty"
             self.time_left = 10
 
-    async def on_step(self, iteration):
+    async def on_step(self, iteration: int) -> None:
         # Fix for burnysc2 library
         self.all_own_units = self.units | self.structures
         for unit in self.all_own_units:
@@ -627,7 +644,7 @@ class MyBot(sc2.BotAI):
             await self.state_step()
 
 
-def collect():
+def collect() -> None:
     run_game(maps.get("Empty128"), [Bot(Race.Zerg, MyBot())], realtime=False)
 
 

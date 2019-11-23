@@ -11,7 +11,7 @@ TARGET_DIR = Path("generated") / "results"
 DATA_DIR = Path("data")
 
 
-def patch():
+def patch() -> None:
     assert SOURCE_DIR.exists()
     TARGET_DIR.mkdir(exist_ok=True)
     T_TOML_DIR.mkdir(exist_ok=True)
@@ -85,10 +85,7 @@ def patch():
         unit_id = unit["id"]
         unit_name = unit["name"]
         for i, ability in list(enumerate(unit["abilities"]))[::-1]:
-            assert set(ability.keys()) <= {
-                "ability",
-                "requirements",
-            }, f"Keys? {ability.keys()}"
+            assert set(ability.keys()) <= {"ability", "requirements"}, f"Keys? {ability.keys()}"
             ability_id = ability["ability"]
 
             # Check if disallowed
