@@ -14,7 +14,7 @@ from sc2.player import Bot, Computer
 from sc2.position import Point2
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
-from s2clientprotocol.data_pb2 import AbilityData, Weapon, Attribute
+from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
 from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
 
 from mypy_extensions import TypedDict
@@ -109,7 +109,7 @@ class MyBot(sc2.BotAI):
 
         is_building = a._proto.is_building or a.id.name == "BUILDAUTOTURRET_AUTOTURRET"
 
-        target_name = AbilityData.Target.Name(a._proto.target)
+        target_name = AbilityDataProto.Target.Name(a._proto.target)
         if a.id.name in ["BUILD_REACTOR", "BUILD_TECHLAB"]:
             assert target_name == "PointOrNone", f"{a.id.name}: {target_name}"
             if "REACTOR" in a.id.name:
@@ -527,6 +527,7 @@ class MyBot(sc2.BotAI):
                 self.data_units[index]["start_energy"] = if_nonzero(unit._proto.energy, int)
                 self.data_units[index]["max_energy"] = if_nonzero(unit._proto.energy_max)
                 self.data_units[index]["radius"] = if_nonzero(unit._proto.radius)
+                self.data_units[index]["is_flying"] = unit.is_flying and unit.type_id != UnitTypeId.COLOSSUS
                 # TODO: "placement_size" for buildings
 
                 # Provided power radius

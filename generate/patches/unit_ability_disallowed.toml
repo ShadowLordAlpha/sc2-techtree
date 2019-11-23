@@ -1,2 +1,5 @@
 [498.2099] # WidowMine - WIDOWMINEATTACK_WIDOWMINEATTACK
 disallow = true
+
+[63.1592] # Forge - RESEARCH_CHARGE
+disallow = true

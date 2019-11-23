@@ -11,7 +11,7 @@ requirements = [ { "building" =  22 } ] # Engineering bay
 requirements = [ { "building" =  21 } ] # Barracks
 
 [21.562] # Barracks - BARRACKSTRAIN_GHOST
-requirements = [ { "building" =  26 } ] # Ghost academy
+requirements = [ { "building" =  26, "addon" = 5 } ] # Ghost academy
 
 [21.563] # Barracks - BARRACKSTRAIN_MARAUDER
 requirements = [ { "addon" =  5 } ] # Attached tech lab

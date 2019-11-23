@@ -10,6 +10,12 @@ ability = 1766
 [[76]] # DarkTemplar MORPH_ARCHON
 ability = 1766
 
+[[139]] # SpineCrawler SPINECRAWLERROOT_SPINECRAWLERROOT
+ability = 1729
+
+[[140]] # SporeCrawlerUprooted SPORECRAWLERROOT_SPORECRAWLERROOT
+ability = 1731
+
 [[63]] # Forge FORGERESEARCH_PROTOSSGROUNDWEAPONSLEVEL2
 ability = 1063
 requirements = [ { "upgrade" = 39 }, { "building" = 65 } ] # Previous level, TwilightCouncil
@@ -138,9 +144,25 @@ requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 ability = 797
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 
+[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
+ability = 800
+requirements = [ { "addon_to" = 28 } ] # Add-on to startport
+
 [[5]] # TechLab RESEARCH_BANSHEECLOAKINGFIELD
 ability = 790
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
+
+[[39]] # FactoryTechlab RESEARCH_DRILLINGCLAWS
+ability = 764
+requirements = [ { "building" = 29 } ] # ARMORY
+
+[[39]] # FactoryTechlab RESEARCH_SMARTSERVOS
+ability = 766
+requirements = [ { "building" = 29 } ] # ARMORY
+
+[[41]] # StarportTechlab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
+ability = 800
+requirements = [ { "building" = 30 } ] # FusionCore
 
 [[89]] # SpawningPool RESEARCH_ZERGLINGADRENALGLANDS
 ability = 1252
@@ -186,5 +208,22 @@ requirements = [ { "upgrade" = 71 }, { "building" = 100 } ] # Previous level, La
 ability = 1317
 requirements = [ { "upgrade" = 72 }, { "building" = 101 } ] # Previous level, Hive
 
+[[102]] # GreaterSpire RESEARCH_ZERGFLYERATTACKLEVEL2
+ability = 1313
+requirements = [ { "upgrade" = 68 }, { "building" = 100 } ] # Previous level, Lair
 
+[[102]] # GreaterSpire RESEARCH_ZERGFLYERATTACKLEVEL3
+ability = 1314
+requirements = [ { "upgrade" = 69 }, { "building" = 101 } ] # Previous level, Hive
 
+[[102]] # GreaterSpire RESEARCH_ZERGFLYERARMORLEVEL2
+ability = 1316
+requirements = [ { "upgrade" = 71 }, { "building" = 100 } ] # Previous level, Lair
+
+[[102]] # GreaterSpire RESEARCH_ZERGFLYERARMORLEVEL3
+ability = 1317
+requirements = [ { "upgrade" = 72 }, { "building" = 101 } ] # Previous level, Hive
+
+[[504]] # LurkerDenMP RESEARCH_ADAPTIVETALONS
+ability = 3709
+requirements = [ { "building" = 101 } ] # Hive
