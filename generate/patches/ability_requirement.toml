@@ -280,6 +280,9 @@ requirements = [ { "building" = 89 } ] # Spawning pool
 [92.1220] # Spire - UPGRADETOGREATERSPIRE_GREATERSPIRE
 requirements = [ { "building" = 101 } ] # Hive
 
+[94.1457] # InfestationPit - INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD
+requirements = [ { "building" = 101 } ] # Hive
+
 [100.1218] # Lair - UPGRADETOHIVE_HIVE
 requirements = [ { "building" = 94 } ] # Infestation pit
 
@@ -366,6 +369,9 @@ requirements = [ { "upgrade" =  64 } ] # Burrow
 
 [111.1444] # Infestor - BURROWDOWN_INFESTOR
 requirements = [ { "upgrade" =  64 } ] # Burrow
+
+[111.3801] # Infestor - AMORPHOUSARMORCLOUD_AMORPHOUSARMORCLOUD
+requirements = [ { "upgrade" =  297 } ] # MicrobialShroud
 
 [112.1372] # Corruptor - MORPHTOBROODLORD_BROODLORD
 requirements = [ { "building" = 102 } ] # Greater spire

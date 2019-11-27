@@ -547,6 +547,27 @@
             "allow_autocast": false,
             "allow_minimap": false,
             "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 48,
+            "name": "FLEETBEACONRESEARCH_RESEARCHVOIDRAYSPEEDUPGRADE",
+            "target": {
+                "Research": {
+                    "upgrade": 288
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
             "cast_range": 10.0,
             "cooldown": 0,
             "cost": {
@@ -1354,7 +1375,7 @@
             "allow_autocast": false,
             "allow_minimap": false,
             "buff": [],
-            "cast_range": 9.0,
+            "cast_range": 8.0,
             "cooldown": 0,
             "cost": {
                 "gas": 0,
@@ -4024,48 +4045,6 @@
             },
             "effect": [],
             "energy_cost": 0,
-            "id": 804,
-            "name": "RESEARCH_HIGHCAPACITYFUELTANKS",
-            "target": {
-                "Research": {
-                    "upgrade": 139
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "cost": {
-                "gas": 0,
-                "minerals": 0,
-                "time": 0
-            },
-            "effect": [],
-            "energy_cost": 0,
-            "id": 805,
-            "name": "RESEARCH_ADVANCEDBALLISTICS",
-            "target": {
-                "Research": {
-                    "upgrade": 140
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "cost": {
-                "gas": 0,
-                "minerals": 0,
-                "time": 0
-            },
-            "effect": [],
-            "energy_cost": 0,
             "id": 806,
             "name": "STARPORTTECHLABRESEARCH_RAVENRESEARCHENHANCEDMUNITIONS",
             "target": {
@@ -6110,6 +6089,27 @@
             },
             "effect": [],
             "energy_cost": 0,
+            "id": 1195,
+            "name": "EVOLUTIONCHAMBERRESEARCH_EVOLVEPROPULSIVEPERISTALSIS",
+            "target": {
+                "Research": {
+                    "upgrade": 301
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
             "id": 1216,
             "name": "UPGRADETOLAIR_LAIR",
             "target": {
@@ -6355,27 +6355,6 @@
             "target": {
                 "Research": {
                     "upgrade": 135
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "cost": {
-                "gas": 0,
-                "minerals": 0,
-                "time": 0
-            },
-            "effect": [],
-            "energy_cost": 0,
-            "id": 1286,
-            "name": "HYDRALISKDENRESEARCH_RESEARCHLURKERRANGE",
-            "target": {
-                "Research": {
-                    "upgrade": 127
                 }
             }
         },
@@ -7660,6 +7639,27 @@
             },
             "effect": [],
             "energy_cost": 0,
+            "id": 1457,
+            "name": "INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD",
+            "target": {
+                "Research": {
+                    "upgrade": 297
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
             "id": 1482,
             "name": "RESEARCH_CENTRIFUGALHOOKS",
             "target": {
@@ -8010,6 +8010,48 @@
             },
             "effect": [],
             "energy_cost": 0,
+            "id": 1533,
+            "name": "FUSIONCORERESEARCH_RESEARCHBALLISTICRANGE",
+            "target": {
+                "Research": {
+                    "upgrade": 140
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 1534,
+            "name": "FUSIONCORERESEARCH_RESEARCHRAPIDREIGNITIONSYSTEM",
+            "target": {
+                "Research": {
+                    "upgrade": 139
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
             "id": 1562,
             "name": "CYBERNETICSCORERESEARCH_PROTOSSAIRWEAPONSLEVEL1",
             "target": {
@@ -8225,6 +8267,69 @@
             "target": {
                 "Research": {
                     "upgrade": 130
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 1595,
+            "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICSURGE",
+            "target": {
+                "Research": {
+                    "upgrade": 298
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 1596,
+            "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHAMPLIFIEDSHIELDING",
+            "target": {
+                "Research": {
+                    "upgrade": 299
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 1597,
+            "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICAMPLIFIERS",
+            "target": {
+                "Research": {
+                    "upgrade": 300
                 }
             }
         },
@@ -19170,6 +19275,27 @@
             },
             "effect": [],
             "energy_cost": 0,
+            "id": 3710,
+            "name": "LURKERDENRESEARCH_RESEARCHLURKERRANGE",
+            "target": {
+                "Research": {
+                    "upgrade": 127
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
             "id": 3739,
             "name": "MORPH_OBSERVERMODE",
             "target": {
@@ -19818,6 +19944,27 @@
             "id": 3800,
             "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPRIGHTGREEN_CANCEL",
             "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 9.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3801,
+            "name": "AMORPHOUSARMORCLOUD_AMORPHOUSARMORCLOUD",
+            "target": {
+                "MorphPlace": {
+                    "produces": 0
+                }
+            }
         }
     ],
     "Unit": [
@@ -20064,7 +20211,7 @@
             "is_structure": false,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 50.0,
+            "max_health": 75.0,
             "name": "InfestorTerran",
             "needs_creep": false,
             "needs_geyser": false,
@@ -20080,8 +20227,8 @@
                 {
                     "attacks": 1,
                     "bonuses": [],
-                    "cooldown": 1.595947265625,
-                    "damage_per_hit": 14.0,
+                    "cooldown": 1.330078125,
+                    "damage_per_hit": 24.0,
                     "damage_splash": 0,
                     "range": 6.0,
                     "target_type": "Air"
@@ -20090,7 +20237,7 @@
                     "attacks": 1,
                     "bonuses": [],
                     "cooldown": 0.86083984375,
-                    "damage_per_hit": 6.0,
+                    "damage_per_hit": 12.0,
                     "damage_splash": 0,
                     "range": 5.0,
                     "target_type": "Ground"
@@ -20225,7 +20372,8 @@
                 "Armored",
                 "Mechanical",
                 "Psionic",
-                "Massive"
+                "Massive",
+                "Heroic"
             ],
             "id": 10,
             "is_addon": false,
@@ -21270,6 +21418,12 @@
             "abilities": [
                 {
                     "ability": 1532
+                },
+                {
+                    "ability": 1533
+                },
+                {
+                    "ability": 1534
                 }
             ],
             "accepts_addon": false,
@@ -21812,9 +21966,6 @@
                 },
                 {
                     "ability": 799
-                },
-                {
-                    "ability": 804
                 },
                 {
                     "ability": 800,
@@ -22842,7 +22993,7 @@
             "radius": 0.625,
             "sight": 11.0,
             "size": 0,
-            "speed": 2.75,
+            "speed": 2.94921875,
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
@@ -23238,6 +23389,9 @@
             "abilities": [
                 {
                     "ability": 46
+                },
+                {
+                    "ability": 48
                 }
             ],
             "accepts_addon": false,
@@ -24049,17 +24203,7 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
-            "weapons": [
-                {
-                    "attacks": 1,
-                    "bonuses": [],
-                    "cooldown": 1.0,
-                    "damage_per_hit": 6.0,
-                    "damage_splash": 0,
-                    "range": 5.0,
-                    "target_type": "Any"
-                }
-            ]
+            "weapons": []
         },
         {
             "abilities": [
@@ -24233,22 +24377,7 @@
             "speed": 2.5,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
-            "weapons": [
-                {
-                    "attacks": 1,
-                    "bonuses": [
-                        {
-                            "against": "Armored",
-                            "damage": 4.0
-                        }
-                    ],
-                    "cooldown": 0.5,
-                    "damage_per_hit": 6.0,
-                    "damage_splash": 0,
-                    "range": 6.0,
-                    "target_type": "Any"
-                }
-            ]
+            "weapons": []
         },
         {
             "abilities": [
@@ -24353,7 +24482,7 @@
             "radius": 0.5,
             "sight": 11.0,
             "size": 0,
-            "speed": 2.1484375,
+            "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
             "weapons": []
@@ -25081,6 +25210,14 @@
                 },
                 {
                     "ability": 1455
+                },
+                {
+                    "ability": 1457,
+                    "requirements": [
+                        {
+                            "building": 101
+                        }
+                    ]
                 }
             ],
             "accepts_addon": false,
@@ -26162,9 +26299,6 @@
                     "ability": 74
                 },
                 {
-                    "ability": 247
-                },
-                {
                     "ability": 1
                 },
                 {
@@ -26188,6 +26322,14 @@
                     "requirements": [
                         {
                             "upgrade": 64
+                        }
+                    ]
+                },
+                {
+                    "ability": 3801,
+                    "requirements": [
+                        {
+                            "upgrade": 297
                         }
                     ]
                 }
@@ -26604,7 +26746,7 @@
             "is_structure": false,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 50.0,
+            "max_health": 75.0,
             "name": "InfestorTerranBurrowed",
             "needs_creep": false,
             "needs_geyser": false,
@@ -26757,9 +26899,6 @@
                 },
                 {
                     "ability": 19
-                },
-                {
-                    "ability": 247
                 },
                 {
                     "ability": 1396
@@ -27607,7 +27746,7 @@
             "is_structure": false,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 70.0,
+            "max_health": 75.0,
             "name": "InfestedTerransEgg",
             "needs_creep": false,
             "needs_geyser": false,
@@ -28406,8 +28545,8 @@
             "is_structure": false,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 150.0,
-            "max_shield": 125.0,
+            "max_health": 200.0,
+            "max_shield": 100.0,
             "name": "Tempest",
             "needs_creep": false,
             "needs_geyser": false,
@@ -28431,7 +28570,7 @@
                     "cooldown": 3.300048828125,
                     "damage_per_hit": 30.0,
                     "damage_splash": 0,
-                    "range": 15.0,
+                    "range": 14.0,
                     "target_type": "Air"
                 },
                 {
@@ -28799,7 +28938,7 @@
                     "cooldown": 2.0,
                     "damage_per_hit": 20.0,
                     "damage_splash": 0,
-                    "range": 9.0,
+                    "range": 8.0,
                     "target_type": "Ground"
                 }
             ]
@@ -29188,11 +29327,11 @@
                     "bonuses": [
                         {
                             "against": "Massive",
-                            "damage": 15.0
+                            "damage": 10.0
                         }
                     ],
-                    "cooldown": 2.39990234375,
-                    "damage_per_hit": 40.0,
+                    "cooldown": 1.280029296875,
+                    "damage_per_hit": 25.0,
                     "damage_splash": 0,
                     "range": 11.0,
                     "target_type": "Air"
@@ -30822,7 +30961,7 @@
                 "Armored",
                 "Structure"
             ],
-            "id": 1956,
+            "id": 1974,
             "is_addon": false,
             "is_flying": false,
             "is_structure": true,
@@ -30852,7 +30991,7 @@
                 "Biological",
                 "Structure"
             ],
-            "id": 1957,
+            "id": 1975,
             "is_addon": false,
             "is_flying": false,
             "is_structure": true,
@@ -31029,8 +31168,8 @@
         },
         {
             "cost": {
-                "gas": 150,
-                "minerals": 150,
+                "gas": 100,
+                "minerals": 100,
                 "time": 1760.0
             },
             "id": 19,
@@ -31407,8 +31546,8 @@
         },
         {
             "cost": {
-                "gas": 75,
-                "minerals": 75,
+                "gas": 100,
+                "minerals": 100,
                 "time": 960.0
             },
             "id": 62,
@@ -31776,9 +31915,9 @@
         },
         {
             "cost": {
-                "gas": 200,
-                "minerals": 200,
-                "time": 1760.0
+                "gas": 150,
+                "minerals": 150,
+                "time": 1280.0
             },
             "id": 127,
             "name": "LurkerRange"
@@ -31877,6 +32016,15 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
+                "time": 1280.0
+            },
+            "id": 288,
+            "name": "VoidRaySpeedUpgrade"
+        },
+        {
+            "cost": {
+                "gas": 100,
+                "minerals": 100,
                 "time": 1760.0
             },
             "id": 289,
@@ -31913,7 +32061,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 1200.0
+                "time": 1280.0
             },
             "id": 293,
             "name": "DiggingClaws"
@@ -31926,6 +32074,51 @@
             },
             "id": 296,
             "name": "EnhancedShockwaves"
+        },
+        {
+            "cost": {
+                "gas": 150,
+                "minerals": 150,
+                "time": 1760.0
+            },
+            "id": 297,
+            "name": "MicrobialShroud"
+        },
+        {
+            "cost": {
+                "gas": 100,
+                "minerals": 100,
+                "time": 2240.0
+            },
+            "id": 298,
+            "name": "SunderingImpact"
+        },
+        {
+            "cost": {
+                "gas": 100,
+                "minerals": 100,
+                "time": 2240.0
+            },
+            "id": 299,
+            "name": "AmplifiedShielding"
+        },
+        {
+            "cost": {
+                "gas": 100,
+                "minerals": 100,
+                "time": 2240.0
+            },
+            "id": 300,
+            "name": "PsionicAmplifiers"
+        },
+        {
+            "cost": {
+                "gas": 100,
+                "minerals": 100,
+                "time": 1280.0
+            },
+            "id": 301,
+            "name": "SecretedCoating"
         }
     ]
 }

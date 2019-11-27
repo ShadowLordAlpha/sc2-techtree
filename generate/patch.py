@@ -102,9 +102,9 @@ def patch() -> None:
                 ability_name = AbilityId(ability_id).name
                 patch_name = f"[{unit_id}.{ability_id}] # {unit_name} - {ability_name}"
                 p0 = patch_ability_requirement.get(str(unit["id"]))
-                assert p0, f"Missing unit requirement: {patch_name}"
+                assert p0, f"Missing ability: {patch_name}"
                 p1 = p0.get(str(ability_id))
-                assert p1, f"Missing unit requirement: {patch_name}"
+                assert p1, f"Missing ability requirement: {patch_name}"
                 ability["requirements"] = p1["requirements"]
             else:
                 # Check if defined even if not used
