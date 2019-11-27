@@ -12,6 +12,7 @@ import sc2
 from sc2 import run_game, maps, Race, Difficulty
 from sc2.player import Bot, Computer
 from sc2.position import Point2
+from sc2.ids.upgrade_id import UpgradeId
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
@@ -334,22 +335,26 @@ class MyBot(sc2.BotAI):
         }
 
     async def on_start(self) -> None:
+        id: int
         for id, a in self._game_data.upgrades.items():
+            a: UpgradeData
             if a._proto.name != "" and a._proto.HasField("research_time"):
                 self.data_upgrades.append(self.serialize_upgrade(a))
                 self.upgrade_abilities[a._proto.ability_id] = a._proto.upgrade_id
 
         for id, a in self._game_data.units.items():
+            a: UnitTypeData
             assert a._proto.name != ""
-            if a.race != Race.NoRace:
+            if a.race != Race.NoRace and a._proto.available:
                 u = self.serialize_unit(a)
                 if u is not None:
                     self.data_units.append(u)
                     self.create_abilities[a._proto.ability_id] = a._proto.unit_id
 
         for id, a in self._game_data.abilities.items():
+            a: AbilityData
             abl = self.serialize_ability(a)
-            if abl is not None:
+            if abl is not None and a._proto.available:
                 self.data_abilities.append(abl)
 
         self.unit_queue = [u["id"] for u in self.data_units[::-1]]
