@@ -13599,22 +13599,21 @@
                     ]
                 },
                 {
-                    "ability": 852,
-                    "requirements": []
+                    "ability": 864
                 },
                 {
-                    "ability": 853,
+                    "ability": 865,
                     "requirements": [
                         {
-                            "upgrade": 27
+                            "upgrade": 116
                         }
                     ]
                 },
                 {
-                    "ability": 854,
+                    "ability": 866,
                     "requirements": [
                         {
-                            "upgrade": 28
+                            "upgrade": 117
                         }
                     ]
                 }
