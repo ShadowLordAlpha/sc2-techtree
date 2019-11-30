@@ -285,6 +285,7 @@ class MyBot(sc2.BotAI):
             UnitTypeId.FLEETBEACON,
             UnitTypeId.TEMPLARARCHIVE,
             UnitTypeId.DARKSHRINE,
+            UnitTypeId.TWILIGHTCOUNCIL,
         }
         needs_creep = (
             a.race == Race.Zerg

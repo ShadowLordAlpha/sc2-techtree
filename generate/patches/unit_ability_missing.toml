@@ -40,15 +40,6 @@ requirements = [ { "upgrade" = 45 }, { "building" = 65 } ] # Previous level, Twi
 ability = 1070
 requirements = [ { "upgrade" = 46 }, { "building" = 65 } ] # Previous level, TwilightCouncil
 
-[[65]] # TwilightCouncil RESEARCH_CHARGE
-ability = 1592
-
-[[65]] # TwilightCouncil RESEARCH_BLINK
-ability = 1593
-
-[[65]] # TwilightCouncil RESEARCH_ADEPTRESONATINGGLAIVES
-ability = 1594
-
 [[72]] # CyberneticsCore CYBERNETICSCORERESEARCH_PROTOSSAIRWEAPONSLEVEL2
 ability = 1563
 requirements = [ { "upgrade" = 78 }, { "building" = 64 } ] # Previous level, FleetBeacon
