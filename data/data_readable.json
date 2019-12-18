@@ -1078,23 +1078,6 @@
             },
             "effect": [],
             "energy_cost": 0,
-            "id": 247,
-            "name": "INFESTEDTERRANS_INFESTEDTERRANS",
-            "target": "Point"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 8.0,
-            "cooldown": 0,
-            "cost": {
-                "gas": 0,
-                "minerals": 0,
-                "time": 0
-            },
-            "effect": [],
-            "energy_cost": 0,
             "id": 249,
             "name": "NEURALPARASITE_NEURALPARASITE",
             "target": "Unit"
@@ -17443,12 +17426,7 @@
                     "ability": 1455
                 },
                 {
-                    "ability": 1457,
-                    "requirements": [
-                        {
-                            "building": 101
-                        }
-                    ]
+                    "ability": 1457
                 }
             ],
             "accepts_addon": false,
@@ -17551,7 +17529,24 @@
             "weapons": []
         },
         {
-            "abilities": [],
+            "abilities": [
+                {
+                    "ability": 1313,
+                    "requirements": [
+                        {
+                            "building": 100
+                        }
+                    ]
+                },
+                {
+                    "ability": 216,
+                    "requirements": [
+                        {
+                            "building": 100
+                        }
+                    ]
+                }
+            ],
             "accepts_addon": false,
             "armor": 1.0,
             "attributes": [
@@ -17814,7 +17809,7 @@
                     "ability": 1315
                 },
                 {
-                    "ability": 1313,
+                    "ability": 217,
                     "requirements": [
                         {
                             "upgrade": 68

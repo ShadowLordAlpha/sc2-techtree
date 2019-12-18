@@ -280,9 +280,6 @@ requirements = [ { "building" = 89 } ] # Spawning pool
 [92.1220] # Spire - UPGRADETOGREATERSPIRE_GREATERSPIRE
 requirements = [ { "building" = 101 } ] # Hive
 
-[94.1457] # InfestationPit - INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD
-requirements = [ { "building" = 101 } ] # Hive
-
 [100.1218] # Lair - UPGRADETOHIVE_HIVE
 requirements = [ { "building" = 94 } ] # Infestation pit
 
