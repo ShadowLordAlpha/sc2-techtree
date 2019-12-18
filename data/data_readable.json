@@ -17531,7 +17531,7 @@
         {
             "abilities": [
                 {
-                    "ability": 1313,
+                    "ability": 216,
                     "requirements": [
                         {
                             "building": 100
@@ -17539,7 +17539,7 @@
                     ]
                 },
                 {
-                    "ability": 216,
+                    "ability": 217,
                     "requirements": [
                         {
                             "building": 100
@@ -17809,7 +17809,7 @@
                     "ability": 1315
                 },
                 {
-                    "ability": 217,
+                    "ability": 1313,
                     "requirements": [
                         {
                             "upgrade": 68

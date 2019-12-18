@@ -199,15 +199,15 @@ ability = 1317
 requirements = [ { "upgrade" = 72 }, { "building" = 101 } ] # Previous level, Hive
 
 [[97]] # RoachWarren RESEARCH_GLIALREGENERATION
-ability = 1313
+ability = 216
 requirements = [ { "building" = 100 } ] # Lair
 
 [[97]] # RoachWarren RESEARCH_TUNNELINGCLAWS
-ability = 216
+ability = 217
 requirements = [ { "building" = 100 } ] # Previous level, Lair
 
 [[102]] # GreaterSpire RESEARCH_ZERGFLYERATTACKLEVEL2
-ability = 217
+ability = 1313
 requirements = [ { "upgrade" = 68 }, { "building" = 100 } ] # Previous level, Lair
 
 [[102]] # GreaterSpire RESEARCH_ZERGFLYERATTACKLEVEL3
