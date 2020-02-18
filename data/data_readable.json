@@ -13630,6 +13630,22 @@
                             "upgrade": 37
                         }
                     ]
+                },
+                {
+                    "ability": 865,
+                    "requirements": [
+                        {
+                            "upgrade": 116
+                        }
+                    ]
+                },
+                {
+                    "ability": 866,
+                    "requirements": [
+                        {
+                            "upgrade": 117
+                        }
+                    ]
                 }
             ],
             "accepts_addon": false,

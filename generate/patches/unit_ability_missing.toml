@@ -88,6 +88,14 @@ requirements = [ { "upgrade" = 36 } ] # Previous level
 ability = 863
 requirements = [ { "upgrade" = 37 } ] # Previous level
 
+[[29]] # Armory TERRANVEHICLEANDSHIPARMORSLEVEL2 ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL2
+ability = 865 # NOTE: Using id only for vehicle armor upgrade here
+requirements = [ { "upgrade" = 116 } ] # Previous level
+
+[[29]] # Armory TERRANVEHICLEANDSHIPARMORSLEVEL3 ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL3
+ability = 866 # NOTE: Using id only for vehicle armor upgrade here
+requirements = [ { "upgrade" = 117 } ] # Previous level
+
 [[5]] # TechLab BARRACKSTECHLABRESEARCH_STIMPACK
 ability = 730
 requirements = [ { "addon_to" = 21 } ] # Add-on to barracks
