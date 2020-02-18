@@ -56,9 +56,6 @@ requirements = [ { "upgrade" = 81 }, { "building" = 64 } ] # Previous level, Fle
 ability = 1567
 requirements = [ { "upgrade" = 82 }, { "building" = 64 } ] # Previous level, FleetBeacon
 
-[[63]] # TwilightCouncil RESEARCH_CHARGE
-ability = 1592
-
 [[22]] # EngineeringBay TERRANINFANTRYWEAPONSLEVEL2
 ability = 653
 requirements = [ { "upgrade" = 7 }, { "building" = 29 } ] # Previous level, Armory
@@ -91,17 +88,6 @@ requirements = [ { "upgrade" = 36 } ] # Previous level
 ability = 863
 requirements = [ { "upgrade" = 37 } ] # Previous level
 
-[[29]] # Armory TERRANVEHICLEANDSHIPARMORSLEVEL1 ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL1
-ability = 864 # NOTE: Using id only for vehicle armor upgrade here
-
-[[29]] # Armory TERRANVEHICLEANDSHIPARMORSLEVEL2 ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL2
-ability = 865 # NOTE: Using id only for vehicle armor upgrade here
-requirements = [ { "upgrade" = 116 } ] # Previous level
-
-[[29]] # Armory TERRANVEHICLEANDSHIPARMORSLEVEL3 ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL3
-ability = 866 # NOTE: Using id only for vehicle armor upgrade here
-requirements = [ { "upgrade" = 117 } ] # Previous level
-
 [[5]] # TechLab BARRACKSTECHLABRESEARCH_STIMPACK
 ability = 730
 requirements = [ { "addon_to" = 21 } ] # Add-on to barracks
@@ -122,10 +108,6 @@ requirements = [ { "addon_to" = 27 } ] # Add-on to factory
 ability = 764
 requirements = [ { "addon_to" = 27 } ] # Add-on to factory
 
-[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHMEDIVACENERGYUPGRADE
-ability = 792
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
-
 [[5]] # TechLab RESEARCH_RAVENCORVIDREACTOR
 ability = 793
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
@@ -138,10 +120,6 @@ requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 ability = 790
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 
-[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
-ability = 800
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
-
 [[39]] # FactoryTechlab RESEARCH_DRILLINGCLAWS
 ability = 764
 requirements = [ { "building" = 29 } ] # ARMORY
@@ -149,10 +127,6 @@ requirements = [ { "building" = 29 } ] # ARMORY
 [[39]] # FactoryTechlab RESEARCH_SMARTSERVOS
 ability = 766
 requirements = [ { "building" = 29 } ] # ARMORY
-
-[[41]] # StarportTechlab STARPORTTECHLABRESEARCH_RESEARCHLIBERATORAGMODE
-ability = 800
-requirements = [ { "building" = 30 } ] # FusionCore
 
 [[89]] # SpawningPool RESEARCH_ZERGLINGADRENALGLANDS
 ability = 1252
@@ -198,6 +172,10 @@ requirements = [ { "upgrade" = 71 }, { "building" = 100 } ] # Previous level, La
 ability = 1317
 requirements = [ { "upgrade" = 72 }, { "building" = 101 } ] # Previous level, Hive
 
+[[96]] # BanelingNest RESEARCH_CENTRIFUGALHOOKS
+ability = 1482
+requirements = [ { "building" = 100 } ] # Lair
+
 [[97]] # RoachWarren RESEARCH_GLIALREGENERATION
 ability = 216
 requirements = [ { "building" = 100 } ] # Lair
@@ -224,4 +202,8 @@ requirements = [ { "upgrade" = 72 }, { "building" = 101 } ] # Previous level, Hi
 
 [[504]] # LurkerDenMP RESEARCH_ADAPTIVETALONS
 ability = 3709
+requirements = [ { "building" = 101 } ] # Hive
+
+[[504]] # LurkerDenMP LURKERDENRESEARCH_RESEARCHLURKERRANGE
+ability = 3710
 requirements = [ { "building" = 101 } ] # Hive

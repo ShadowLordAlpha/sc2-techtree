@@ -343,6 +343,13 @@ class MyBot(sc2.BotAI):
                 self.data_upgrades.append(self.serialize_upgrade(a))
                 self.upgrade_abilities[a._proto.ability_id] = a._proto.upgrade_id
 
+        # Armory armory-plating upgrades are wrong from the API
+        self.upgrade_abilities.update({
+            864: 116,
+            865: 117,
+            866: 118,
+        })
+
         for id, a in self._game_data.units.items():
             a: UnitTypeData
             assert a._proto.name != ""
@@ -638,8 +645,6 @@ class MyBot(sc2.BotAI):
                 color=(0, 255, 0),
                 size=12,
             )
-
-        # await self._client.send_debug()
 
         # Create all units (including structures) to get more info
         if iteration == 0:

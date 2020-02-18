@@ -3880,6 +3880,69 @@
             },
             "effect": [],
             "energy_cost": 0,
+            "id": 864,
+            "name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL1",
+            "target": {
+                "Research": {
+                    "upgrade": 116
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 865,
+            "name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL2",
+            "target": {
+                "Research": {
+                    "upgrade": 117
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
+            "id": 866,
+            "name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL3",
+            "target": {
+                "Research": {
+                    "upgrade": 118
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "cost": {
+                "gas": 0,
+                "minerals": 0,
+                "time": 0
+            },
+            "effect": [],
+            "energy_cost": 0,
             "id": 880,
             "name": "PROTOSSBUILD_NEXUS",
             "target": {
@@ -12290,14 +12353,6 @@
                     ]
                 },
                 {
-                    "ability": 792,
-                    "requirements": [
-                        {
-                            "addon_to": 28
-                        }
-                    ]
-                },
-                {
                     "ability": 793,
                     "requirements": [
                         {
@@ -12315,14 +12370,6 @@
                 },
                 {
                     "ability": 790,
-                    "requirements": [
-                        {
-                            "addon_to": 28
-                        }
-                    ]
-                },
-                {
-                    "ability": 800,
                     "requirements": [
                         {
                             "addon_to": 28
@@ -13550,6 +13597,9 @@
                     "ability": 861
                 },
                 {
+                    "ability": 864
+                },
+                {
                     "ability": 856,
                     "requirements": [
                         {
@@ -13578,25 +13628,6 @@
                     "requirements": [
                         {
                             "upgrade": 37
-                        }
-                    ]
-                },
-                {
-                    "ability": 864
-                },
-                {
-                    "ability": 865,
-                    "requirements": [
-                        {
-                            "upgrade": 116
-                        }
-                    ]
-                },
-                {
-                    "ability": 866,
-                    "requirements": [
-                        {
-                            "upgrade": 117
                         }
                     ]
                 }
@@ -14179,14 +14210,6 @@
                 },
                 {
                     "ability": 799
-                },
-                {
-                    "ability": 800,
-                    "requirements": [
-                        {
-                            "building": 30
-                        }
-                    ]
                 }
             ],
             "accepts_addon": false,
@@ -17501,7 +17524,16 @@
             "weapons": []
         },
         {
-            "abilities": [],
+            "abilities": [
+                {
+                    "ability": 1482,
+                    "requirements": [
+                        {
+                            "building": 100
+                        }
+                    ]
+                }
+            ],
             "accepts_addon": false,
             "armor": 1.0,
             "attributes": [
@@ -21173,6 +21205,14 @@
             "abilities": [
                 {
                     "ability": 3709,
+                    "requirements": [
+                        {
+                            "building": 101
+                        }
+                    ]
+                },
+                {
+                    "ability": 3710,
                     "requirements": [
                         {
                             "building": 101

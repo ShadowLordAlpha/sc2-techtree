@@ -3,13 +3,12 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
-black = "*"
-monkeytype = "*"
-
 [packages]
 burnysc2 = "*"
 toml = "*"
+
+[dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.7"
