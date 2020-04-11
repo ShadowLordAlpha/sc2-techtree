@@ -192,7 +192,6 @@ class MyBot(sc2.BotAI):
                 "energy_cost": 0,
                 "allow_minimap": a._proto.allow_minimap,
                 "allow_autocast": a._proto.allow_autocast,
-                "cost": EMPTY_COST,
                 "effect": [],
                 "buff": [],
                 "cooldown": 0,
@@ -333,6 +332,9 @@ class MyBot(sc2.BotAI):
             "is_addon": is_addon,
             "is_worker": is_worker,
             "is_townhall": is_townhall,
+            "minerals": a._proto.mineral_cost,
+            "gas": a._proto.vespene_cost,
+            "time": a._proto.build_time,
         }
 
     async def on_start(self) -> None:

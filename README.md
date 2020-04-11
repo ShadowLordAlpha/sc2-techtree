@@ -10,7 +10,7 @@ You need `python3.7` or newer + `pipenv`.
 
 The Python code to generate new data is under `generate`.
 
-You can just run `pipenv run run.py` to generate new `/data/data.json`.
+You can just run `pipenv run python run.py` to generate new `/data/data.json`.
 
 # Missing data? Invalid data? Other issues?
 
