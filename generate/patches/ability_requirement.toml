@@ -251,7 +251,7 @@ requirements = [ { "building" = 72 } ] # Cybernetics core
 requirements = [ { "building" = 63 } ] # Forge
 
 [84.889] # Probe - PROTOSSBUILD_STARGATE
-requirements = [ { "building" = 62 } ] # Gateway
+requirements = [ { "building" = 72 } ] # Cybernetics core
 
 [84.890] # Probe - PROTOSSBUILD_TEMPLARARCHIVE
 requirements = [ { "building" = 65 } ] # Twilight council
