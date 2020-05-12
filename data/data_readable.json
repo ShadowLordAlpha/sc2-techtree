@@ -10159,6 +10159,58 @@
         {
             "abilities": [
                 {
+                    "ability": 4
+                },
+                {
+                    "ability": 23
+                },
+                {
+                    "ability": 1
+                }
+            ],
+            "accepts_addon": false,
+            "armor": 0.0,
+            "attributes": [
+                "Armored",
+                "Mechanical",
+                "Structure"
+            ],
+            "detection_range": 11.0,
+            "gas": 0,
+            "id": 23,
+            "is_addon": false,
+            "is_flying": false,
+            "is_structure": true,
+            "is_townhall": false,
+            "is_worker": false,
+            "max_health": 250.0,
+            "minerals": 100,
+            "name": "MissileTurret",
+            "needs_creep": false,
+            "needs_geyser": false,
+            "needs_power": false,
+            "race": "Terran",
+            "radius": 1.125,
+            "sight": 11.0,
+            "size": 0,
+            "speed_creep_mul": 1.0,
+            "supply": 0.0,
+            "time": 400.0,
+            "weapons": [
+                {
+                    "attacks": 2,
+                    "bonuses": [],
+                    "cooldown": 0.86083984375,
+                    "damage_per_hit": 12.0,
+                    "damage_splash": 0,
+                    "range": 7.0,
+                    "target_type": "Air"
+                }
+            ]
+        },
+        {
+            "abilities": [
+                {
                     "ability": 32
                 },
                 {

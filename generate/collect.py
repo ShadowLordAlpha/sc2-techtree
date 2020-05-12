@@ -228,8 +228,8 @@ class MyBot(sc2.BotAI):
             assert a._proto.food_required == 0
 
         nl = a.name.lower()
-        if any(
-            w in nl for w in ["bridge", "weapon", "missile", "preview", "dummy", "test", "alternate", "broodlingescort"]
+        if nl != "missileturret" and any(
+            w in nl for w in {"bridge", "weapon", "missile", "preview", "dummy", "test", "alternate", "broodlingescort"}
         ):
             return None
 
@@ -346,11 +346,9 @@ class MyBot(sc2.BotAI):
                 self.upgrade_abilities[a._proto.ability_id] = a._proto.upgrade_id
 
         # Armory armory-plating upgrades are wrong from the API
-        self.upgrade_abilities.update({
-            864: 116,
-            865: 117,
-            866: 118,
-        })
+        self.upgrade_abilities.update(
+            {864: 116, 865: 117, 866: 118,}
+        )
 
         for id, a in self._game_data.units.items():
             a: UnitTypeData
