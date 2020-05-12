@@ -115,32 +115,38 @@ class MyBot(sc2.BotAI):
             assert target_name == "PointOrNone", f"{a.id.name}: {target_name}"
             if "REACTOR" in a.id.name:
                 unit_id = UnitTypeId.REACTOR.value
+                unit_name = UnitTypeId.REACTOR.name
             elif "TECHLAB" in a.id.name:
                 unit_id = UnitTypeId.TECHLAB.value
+                unit_name = UnitTypeId.TECHLAB.name
             else:
                 assert False, "Invalid add-on"
-            build = {"target": {"BuildInstant": {"produces": unit_id}}}
+            build = {"target": {"BuildInstant": {"produces": unit_id, "produces_name": unit_name}}}
         elif is_building:
             if real_id in self.create_abilities:
                 unit_id = self.create_abilities[real_id]
+                unit_name = UnitTypeId(unit_id).name
             else:
                 unit_id = 0
+                unit_name = "Unknown"
 
             if a._proto.is_instant_placement:
                 assert target_name == "PointOrNone", f"{a.id.name}: {target_name}"
-                build = {"target": {"BuildInstant": {"produces": unit_id}}}
+                build = {"target": {"BuildInstant": {"produces": unit_id, "produces_name": unit_name}}}
             elif target_name == "Unit":
-                build = {"target": {"BuildOnUnit": {"produces": unit_id}}}
+                build = {"target": {"BuildOnUnit": {"produces": unit_id, "produces_name": unit_name}}}
             else:
                 assert target_name == "Point", f"{a.id.name}: {target_name}"
-                build = {"target": {"Build": {"produces": unit_id}}}
+                build = {"target": {"Build": {"produces": unit_id, "produces_name": unit_name}}}
         elif "RESEARCH_" in a.id.name:
             assert target_name == "None", f"{a.id.name}: {target_name}"
             if real_id not in self.upgrade_abilities:
                 # Not in the game anymore
                 return None
 
-            build = {"target": {"Research": {"upgrade": self.upgrade_abilities[real_id]}}}
+            research_id = self.upgrade_abilities[real_id]
+            research_name = UpgradeId(research_id).name
+            build = {"target": {"Research": {"upgrade": research_id, "upgrade_name": research_name}}}
         elif is_morph:
             if real_id in self.create_abilities:
                 unit_id = self.create_abilities[real_id]
@@ -163,17 +169,18 @@ class MyBot(sc2.BotAI):
                         unit_id = cands[0]["id"]
                         break
 
+            unit_name = UnitTypeId(unit_id).name
             if target_name == "Point":
-                build = {"target": {"MorphPlace": {"produces": unit_id}}}
+                build = {"target": {"MorphPlace": {"produces": unit_id, "produces_name": unit_name}}}
             else:
                 assert target_name == "None", f"{a.id.name}: {target_name}"
-                build = {"target": {"Morph": {"produces": unit_id}}}
+                build = {"target": {"Morph": {"produces": unit_id, "produces_name": unit_name}}}
         elif "WARPGATETRAIN_" in a.id.name or "TRAINWARP_ADEPT" == a.id.name:
             # assert target_name == "Point", f"{a.id.name}: {target_name}"
-            build = {"target": {"TrainPlace": {"produces": 0}}}
+            build = {"target": {"TrainPlace": {"produces": 0, "produces_name": "Unknown"}}}
         elif "TRAIN_" in a.id.name or a.id.name == "SPAWNCHANGELING_SPAWNCHANGELING":
             assert target_name == "None", f"{a.id.name}: {target_name}"
-            build = {"target": {"Train": {"produces": 0}}}
+            build = {"target": {"Train": {"produces": 0, "produces_name": "Unknown"}}}
         elif a.id.name.startswith("EFFECT_"):
             # TODO: Effects
             build = {"target": target_name}

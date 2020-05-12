@@ -69,6 +69,7 @@ def patch() -> None:
                     if p:
                         # assert p, f"Missing ability product: [{abil_id}] # {abil_name}"
                         abil["target"][k]["produces"] = p["produces"]
+                        abil["target"][k]["produces_name"] = p.get("produces_name", "Unknown")
 
     # Patch missing ability products
     for abil in c_ability["Ability"]:
