@@ -101,7 +101,7 @@ class MyBot(sc2.BotAI):
             return None
 
         is_morph = (
-            "MORPH" in a.id.name
+            ("MORPH" in a.id.name and "AMORPHOUSARMORCLOUD" not in a.id.name)
             or a.id.name.startswith("LARVATRAIN_")
             or a.id.name.startswith("UPGRADETO")
             or a.id.name.startswith("BURROW")
