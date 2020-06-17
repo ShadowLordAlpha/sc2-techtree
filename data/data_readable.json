@@ -410,7 +410,7 @@
             "allow_autocast": false,
             "allow_minimap": false,
             "buff": [],
-            "cast_range": 9.0,
+            "cast_range": 10.0,
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
@@ -9342,18 +9342,13 @@
             "allow_autocast": false,
             "allow_minimap": false,
             "buff": [],
-            "cast_range": 9.0,
+            "cast_range": 500.0,
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
             "id": 3801,
             "name": "AMORPHOUSARMORCLOUD_AMORPHOUSARMORCLOUD",
-            "target": {
-                "MorphPlace": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
+            "target": "Unit"
         }
     ],
     "Unit": [
@@ -12669,6 +12664,9 @@
                     "ability": 1006
                 },
                 {
+                    "ability": 3801
+                },
+                {
                     "ability": 3755
                 },
                 {
@@ -14514,7 +14512,7 @@
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
-                "Armored",
+                "Light",
                 "Biological",
                 "Structure"
             ],
@@ -14894,9 +14892,6 @@
                 },
                 {
                     "ability": 1455
-                },
-                {
-                    "ability": 1457
                 }
             ],
             "accepts_addon": false,
@@ -16035,61 +16030,7 @@
             ]
         },
         {
-            "abilities": [
-                {
-                    "ability": 4
-                },
-                {
-                    "ability": 16
-                },
-                {
-                    "ability": 17
-                },
-                {
-                    "ability": 18
-                },
-                {
-                    "ability": 19
-                },
-                {
-                    "ability": 74
-                },
-                {
-                    "ability": 1
-                },
-                {
-                    "ability": 249,
-                    "requirements": [
-                        {
-                            "upgrade": 101
-                        }
-                    ]
-                },
-                {
-                    "ability": 1394,
-                    "requirements": [
-                        {
-                            "upgrade": 64
-                        }
-                    ]
-                },
-                {
-                    "ability": 1444,
-                    "requirements": [
-                        {
-                            "upgrade": 64
-                        }
-                    ]
-                },
-                {
-                    "ability": 3801,
-                    "requirements": [
-                        {
-                            "upgrade": 297
-                        }
-                    ]
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -16661,7 +16602,7 @@
                     "cooldown": 1.0,
                     "damage_per_hit": 9.0,
                     "damage_splash": 0,
-                    "range": 8.0,
+                    "range": 7.0,
                     "target_type": "Air"
                 },
                 {
@@ -17190,7 +17131,7 @@
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
-                "Armored",
+                "Light",
                 "Biological",
                 "Structure"
             ],
@@ -17229,7 +17170,7 @@
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
-                "Armored",
+                "Light",
                 "Biological",
                 "Structure"
             ],
@@ -20992,7 +20933,6 @@
             "needs_creep": false,
             "needs_geyser": true,
             "needs_power": false,
-            "normal_mode": 20,
             "race": "Terran",
             "radius": 1.6875,
             "sight": 9.0,
@@ -21024,7 +20964,6 @@
             "needs_creep": false,
             "needs_geyser": true,
             "needs_power": false,
-            "normal_mode": 61,
             "race": "Protoss",
             "radius": 1.6875,
             "sight": 9.0,
@@ -21056,7 +20995,6 @@
             "needs_creep": false,
             "needs_geyser": true,
             "needs_power": false,
-            "normal_mode": 88,
             "race": "Zerg",
             "radius": 1.6875,
             "sight": 9.0,
