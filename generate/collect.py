@@ -580,7 +580,7 @@ class MyBot(sc2.BotAI):
         elif self.__state == "BuildAddOn":
             assert len(self.all_own_units) == 1, f"? {self.all_own_units}"
             unit = self.all_own_units.first
-            self.do(unit.build(UnitTypeId(self.current_unit)))
+            unit.build(UnitTypeId(self.current_unit))
             self.wait_steps = 10
             self.__state = "BuildAddOnWait"
 

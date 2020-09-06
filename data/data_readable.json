@@ -172,42 +172,6 @@
             "allow_autocast": false,
             "allow_minimap": false,
             "buff": [],
-            "cast_range": 1.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 26,
-            "name": "EFFECT_SPRAY_TERRAN",
-            "target": "Point"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 1.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 28,
-            "name": "EFFECT_SPRAY_ZERG",
-            "target": "Point"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 1.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 30,
-            "name": "EFFECT_SPRAY_PROTOSS",
-            "target": "Point"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
             "cast_range": 0.0,
             "cooldown": 0,
             "effect": [],
@@ -334,6 +298,23 @@
                 "Research": {
                     "upgrade": 288,
                     "upgrade_name": "VOIDRAYSPEEDUPGRADE"
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 49,
+            "name": "FLEETBEACONRESEARCH_TEMPESTRESEARCHGROUNDATTACKUPGRADE",
+            "target": {
+                "Research": {
+                    "upgrade": 296,
+                    "upgrade_name": "TEMPESTGROUNDATTACKUPGRADE"
                 }
             }
         },
@@ -2748,7 +2729,7 @@
             "name": "GHOSTACADEMYRESEARCH_RESEARCHENHANCEDSHOCKWAVES",
             "target": {
                 "Research": {
-                    "upgrade": 296,
+                    "upgrade": 297,
                     "upgrade_name": "ENHANCEDSHOCKWAVES"
                 }
             }
@@ -4378,7 +4359,7 @@
             "name": "EVOLUTIONCHAMBERRESEARCH_EVOLVEPROPULSIVEPERISTALSIS",
             "target": {
                 "Research": {
-                    "upgrade": 301,
+                    "upgrade": 302,
                     "upgrade_name": "SECRETEDCOATING"
                 }
             }
@@ -5594,7 +5575,7 @@
             "name": "INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD",
             "target": {
                 "Research": {
-                    "upgrade": 297,
+                    "upgrade": 298,
                     "upgrade_name": "MICROBIALSHROUD"
                 }
             }
@@ -6103,7 +6084,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICSURGE",
             "target": {
                 "Research": {
-                    "upgrade": 298,
+                    "upgrade": 299,
                     "upgrade_name": "SUNDERINGIMPACT"
                 }
             }
@@ -6120,7 +6101,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHAMPLIFIEDSHIELDING",
             "target": {
                 "Research": {
-                    "upgrade": 299,
+                    "upgrade": 300,
                     "upgrade_name": "AMPLIFIEDSHIELDING"
                 }
             }
@@ -6137,7 +6118,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICAMPLIFIERS",
             "target": {
                 "Research": {
-                    "upgrade": 300,
+                    "upgrade": 301,
                     "upgrade_name": "PSIONICAMPLIFIERS"
                 }
             }
@@ -8800,18 +8781,6 @@
             }
         },
         {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 1.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3684,
-            "name": "EFFECT_SPRAY",
-            "target": "Point"
-        },
-        {
             "allow_autocast": true,
             "allow_minimap": false,
             "buff": [],
@@ -9087,18 +9056,6 @@
             "target": "Unit"
         },
         {
-            "allow_autocast": true,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 6.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3765,
-            "name": "EFFECT_RESTORE",
-            "target": "Unit"
-        },
-        {
             "allow_autocast": false,
             "allow_minimap": true,
             "buff": [],
@@ -9322,8 +9279,32 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
+            "id": 3797,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY1",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
             "id": 3798,
-            "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPLEFTGREEN_CANCEL",
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY2",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3799,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY3",
             "target": "None"
         },
         {
@@ -9335,6 +9316,150 @@
             "effect": [],
             "energy_cost": 0,
             "id": 3800,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY4",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3801,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY5",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3802,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY6",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3803,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY7",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3804,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY8",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3805,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY9",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3806,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY10",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3807,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY11",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3808,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY12",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3809,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY13",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3810,
+            "name": "LOADOUTSPRAY_LOADOUTSPRAY14",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3967,
+            "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPLEFTGREEN_CANCEL",
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 3970,
             "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPRIGHTGREEN_CANCEL",
             "target": "None"
         },
@@ -9346,9 +9471,45 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 3801,
-            "name": "AMORPHOUSARMORCLOUD_AMORPHOUSARMORCLOUD",
+            "id": 4107,
+            "name": "BATTERYOVERCHARGE_BATTERYOVERCHARGE",
             "target": "Unit"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 9.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 4109,
+            "name": "AMORPHOUSARMORCLOUD_AMORPHOUSARMORCLOUD",
+            "target": "Point"
+        },
+        {
+            "allow_autocast": true,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 6.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 4111,
+            "name": "SHIELDBATTERYRECHARGEEX5_SHIELDBATTERYRECHARGE",
+            "target": "Unit"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 4112,
+            "name": "SHIELDBATTERYRECHARGEEX5_STOP",
+            "target": "None"
         }
     ],
     "Unit": [
@@ -11691,9 +11852,6 @@
                     "ability": 23
                 },
                 {
-                    "ability": 26
-                },
-                {
                     "ability": 295
                 },
                 {
@@ -12664,7 +12822,7 @@
                     "ability": 1006
                 },
                 {
-                    "ability": 3801
+                    "ability": 4107
                 },
                 {
                     "ability": 3755
@@ -12983,6 +13141,9 @@
                 },
                 {
                     "ability": 48
+                },
+                {
+                    "ability": 49
                 }
             ],
             "accepts_addon": false,
@@ -14007,7 +14168,7 @@
             "is_worker": false,
             "max_health": 150.0,
             "max_shield": 100.0,
-            "minerals": 250,
+            "minerals": 200,
             "name": "VoidRay",
             "needs_creep": false,
             "needs_geyser": false,
@@ -14016,10 +14177,10 @@
             "radius": 1.0,
             "sight": 10.0,
             "size": 0,
-            "speed": 2.5,
+            "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
-            "time": 960.0,
+            "time": 832.0,
             "weapons": []
         },
         {
@@ -14219,9 +14380,6 @@
                 },
                 {
                     "ability": 23
-                },
-                {
-                    "ability": 30
                 },
                 {
                     "ability": 298
@@ -15435,9 +15593,6 @@
                     "ability": 23
                 },
                 {
-                    "ability": 28
-                },
-                {
                     "ability": 1152
                 },
                 {
@@ -16030,7 +16185,56 @@
             ]
         },
         {
-            "abilities": [],
+            "abilities": [
+                {
+                    "ability": 4
+                },
+                {
+                    "ability": 16
+                },
+                {
+                    "ability": 17
+                },
+                {
+                    "ability": 18
+                },
+                {
+                    "ability": 19
+                },
+                {
+                    "ability": 74
+                },
+                {
+                    "ability": 4109
+                },
+                {
+                    "ability": 1
+                },
+                {
+                    "ability": 249,
+                    "requirements": [
+                        {
+                            "upgrade": 101
+                        }
+                    ]
+                },
+                {
+                    "ability": 1394,
+                    "requirements": [
+                        {
+                            "upgrade": 64
+                        }
+                    ]
+                },
+                {
+                    "ability": 1444,
+                    "requirements": [
+                        {
+                            "upgrade": 64
+                        }
+                    ]
+                }
+            ],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -20707,17 +20911,7 @@
             "weapons": []
         },
         {
-            "abilities": [
-                {
-                    "ability": 4
-                },
-                {
-                    "ability": 3765
-                },
-                {
-                    "ability": 1
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 1.0,
             "attributes": [
@@ -20951,7 +21145,7 @@
                 "Structure"
             ],
             "gas": 0,
-            "id": 1980,
+            "id": 1994,
             "is_addon": false,
             "is_flying": false,
             "is_structure": true,
@@ -20983,7 +21177,7 @@
                 "Structure"
             ],
             "gas": 0,
-            "id": 1981,
+            "id": 1995,
             "is_addon": false,
             "is_flying": false,
             "is_structure": true,
@@ -22063,10 +22257,10 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 1760.0
+                "time": 2240.0
             },
             "id": 296,
-            "name": "EnhancedShockwaves"
+            "name": "TempestGroundAttackUpgrade"
         },
         {
             "cost": {
@@ -22075,6 +22269,15 @@
                 "time": 1760.0
             },
             "id": 297,
+            "name": "EnhancedShockwaves"
+        },
+        {
+            "cost": {
+                "gas": 150,
+                "minerals": 150,
+                "time": 1760.0
+            },
+            "id": 298,
             "name": "MicrobialShroud"
         },
         {
@@ -22083,7 +22286,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 298,
+            "id": 299,
             "name": "SunderingImpact"
         },
         {
@@ -22092,7 +22295,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 299,
+            "id": 300,
             "name": "AmplifiedShielding"
         },
         {
@@ -22101,7 +22304,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 300,
+            "id": 301,
             "name": "PsionicAmplifiers"
         },
         {
@@ -22110,7 +22313,7 @@
                 "minerals": 100,
                 "time": 1280.0
             },
-            "id": 301,
+            "id": 302,
             "name": "SecretedCoating"
         }
     ]
