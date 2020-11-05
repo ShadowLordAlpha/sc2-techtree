@@ -323,7 +323,7 @@ requirements = [ { "building" = 89 } ] # Spawning pool
 requirements = [ { "building" = 89 } ] # Spawning pool
 
 [104.1167] # Drone - ZERGBUILD_SPORECRAWLER
-requirements = [ { "building" = 90 } ] # Evolution chamber
+requirements = [ { "building" = 89 } ] # Spawning pool
 
 [105.80] # Zergling - MORPHZERGLINGTOBANELING_BANELING
 requirements = [ { "building" = 96 } ] # Baneling nest
