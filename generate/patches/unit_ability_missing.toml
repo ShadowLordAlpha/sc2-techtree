@@ -120,10 +120,6 @@ requirements = [ { "addon_to" = 27 } ] # Add-on to factory
 ability = 793
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
 
-[[5]] # TechLab STARPORTTECHLABRESEARCH_RESEARCHDURABLEMATERIALS
-ability = 797
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
-
 [[5]] # TechLab RESEARCH_BANSHEECLOAKINGFIELD
 ability = 790
 requirements = [ { "addon_to" = 28 } ] # Add-on to startport
