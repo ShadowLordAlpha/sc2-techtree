@@ -18,20 +18,23 @@ from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
 from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
 
-from mypy_extensions import TypedDict
 
 from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
 from typing import Any, Dict, List, Optional, Type, Union
 
+from dataclasses import dataclass
 
-class CostTypedDict(TypedDict):
+
+@dataclass()
+class CostTypedDict:
     gas: int
     minerals: int
     time: float
 
 
-class MyBotSerializeUpgradeTypedDict(TypedDict):
-    cost: "CostTypedDict"
+@dataclass()
+class MyBotSerializeUpgradeTypedDict:
+    cost: CostTypedDict
     id: int
     name: str
 

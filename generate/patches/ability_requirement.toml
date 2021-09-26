@@ -314,7 +314,7 @@ requirements = [ { "building" = 100 } ] # Lair
 requirements = [ { "building" = 89 } ] # Spawning pool
 
 [104.1163] # Drone - BUILD_LURKERDEN
-requirements = [ { "building" = 100 } ] # Lair
+requirements = [ { "building" = 91 } ] # HydraliskDen
 
 [104.1165] # Drone - ZERGBUILD_ROACHWARREN
 requirements = [ { "building" = 89 } ] # Spawning pool

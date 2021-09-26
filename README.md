@@ -6,11 +6,12 @@ This repository contains Python scripts for data generation.
 
 # Development
 
-You need `python3.7` or newer + `pipenv`.
+- Install python3.7 or newer
+- `pip install poetry --user`
 
 The Python code to generate new data is under `generate`.
 
-You can just run `pipenv run python run.py` to generate new `/data/data.json`.
+You can just run `poetry run python run.py` to generate new `/data/data.json`.
 
 # Missing data? Invalid data? Other issues?
 
