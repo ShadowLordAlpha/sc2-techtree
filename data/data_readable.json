@@ -14043,7 +14043,7 @@
             "is_worker": false,
             "max_health": 150.0,
             "max_shield": 100.0,
-            "minerals": 200,
+            "minerals": 250,
             "name": "VoidRay",
             "needs_creep": false,
             "needs_geyser": false,
@@ -14055,7 +14055,7 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
-            "time": 832.0,
+            "time": 963.19921875,
             "weapons": []
         },
         {

@@ -18,7 +18,6 @@ from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
 from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
 
-
 from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
 from typing import Any, Dict, List, Optional, Type, Union
 
@@ -41,14 +40,14 @@ class MyBotSerializeUpgradeTypedDict:
 
 def remove_prefix(s: str, prefix: str) -> str:
     if s.startswith(prefix):
-        return s[len(prefix) :]
+        return s[len(prefix):]
     else:
         return s
 
 
 def remove_postfix(s: str, postfix: str) -> str:
     if s.endswith(postfix):
-        return s[: -len(postfix)]
+        return s[:-len(postfix)]
     else:
         return s
 
@@ -66,12 +65,12 @@ SPEC_INFIX = ["ROOT_"]
 
 EMPTY_COST = {"minerals": 0, "gas": 0, "time": 0}
 
-
 TARGET_DIR = Path("generated") / "collect"
 TARGET_DIR.mkdir(exist_ok=True, parents=True)
 
 
 class MyBot(sc2.BotAI):
+
     def __init__(self) -> None:
         super().__init__()
 
@@ -96,20 +95,19 @@ class MyBot(sc2.BotAI):
 
         # Check if useless
         if (
-            a.id.name.endswith("_DOORDEFAULTCLOSE")
-            or a.id.name.endswith("_BRIDGERETRACT")
-            or a.id.name.endswith("_BRIDGEEXTEND")
-            or "CRITTER" in real_name
+            a.id.name.endswith("_DOORDEFAULTCLOSE") or a.id.name.endswith("_BRIDGERETRACT")
+            or a.id.name.endswith("_BRIDGEEXTEND") or "CRITTER" in real_name
         ):
             return None
 
-        is_morph = (
-            ("MORPH" in a.id.name and "AMORPHOUSARMORCLOUD" not in a.id.name)
-            or a.id.name.startswith("LARVATRAIN_")
-            or a.id.name.startswith("UPGRADETO")
-            or a.id.name.startswith("BURROW")
-            or a.id.name in ["LIFT", "LAND", "SIEGEMODE_SIEGEMODE", "UNSIEGE_UNSIEGE"]
-        )
+        morph_conditions = [
+            "MORPH" in a.id.name and "AMORPHOUSARMORCLOUD" not in a.id.name,
+            a.id.name.startswith("LARVATRAIN_"),
+            a.id.name.startswith("UPGRADETO"),
+            a.id.name.startswith("BURROW"),
+            a.id.name in ["LIFT", "LAND", "SIEGEMODE_SIEGEMODE", "UNSIEGE_UNSIEGE"],
+        ]
+        is_morph = any(morph_conditions)
 
         is_building = a._proto.is_building or a.id.name == "BUILDAUTOTURRET_AUTOTURRET"
 
@@ -166,7 +164,7 @@ class MyBot(sc2.BotAI):
                         break
                 for infix in SPEC_INFIX:
                     if infix in real_name:
-                        name = real_name[: real_name.find(infix)]
+                        name = real_name[:real_name.find(infix)]
                         cands = [u for u in self.data_units if name == u["name"].upper()]
                         assert len(cands) == 1, name
                         unit_id = cands[0]["id"]
@@ -213,7 +211,11 @@ class MyBot(sc2.BotAI):
         return {
             "id": a._proto.upgrade_id,
             "name": a._proto.name,
-            "cost": {"minerals": a._proto.mineral_cost, "gas": a._proto.vespene_cost, "time": a._proto.research_time},
+            "cost": {
+                "minerals": a._proto.mineral_cost,
+                "gas": a._proto.vespene_cost,
+                "time": a._proto.research_time
+            },
         }
 
     def serialize_buff(self, a):
@@ -230,7 +232,10 @@ class MyBot(sc2.BotAI):
             "attacks": a.attacks,
             "range": a.range,
             "cooldown": a.speed,
-            "bonuses": [{"against": Attribute.Name(b.attribute), "damage": b.bonus} for b in a.damage_bonus],
+            "bonuses": [{
+                "against": Attribute.Name(b.attribute),
+                "damage": b.bonus
+            } for b in a.damage_bonus],
         }
 
     def serialize_unit(self, a: UnitTypeData) -> Any:
@@ -239,7 +244,8 @@ class MyBot(sc2.BotAI):
 
         nl = a.name.lower()
         if nl != "missileturret" and any(
-            w in nl for w in {"bridge", "weapon", "missile", "preview", "dummy", "test", "alternate", "broodlingescort"}
+            w in nl
+            for w in {"bridge", "weapon", "missile", "preview", "dummy", "test", "alternate", "broodlingescort"}
         ):
             return None
 
@@ -297,10 +303,7 @@ class MyBot(sc2.BotAI):
             UnitTypeId.TWILIGHTCOUNCIL,
         }
         needs_creep = (
-            a.race == Race.Zerg
-            and is_structure
-            and a.id
-            not in {
+            a.race == Race.Zerg and is_structure and a.id not in {
                 UnitTypeId.HATCHERY,
                 UnitTypeId.LAIR,
                 UnitTypeId.HIVE,
@@ -320,7 +323,10 @@ class MyBot(sc2.BotAI):
             "supply": a._proto.food_required - a._proto.food_provided,
             "cargo_size": if_nonzero(a._proto.cargo_size),
             "cargo_capacity": None,  # Use created unit to check
-            "max_health": {"hp": 0, "shield": None},  # Use created unit to check
+            "max_health": {
+                "hp": 0,
+                "shield": None
+            },  # Use created unit to check
             "armor": a._proto.armor,
             "sight": a._proto.sight_range,
             "detection_range": None,  # Use created unit to check
@@ -356,9 +362,11 @@ class MyBot(sc2.BotAI):
                 self.upgrade_abilities[a._proto.ability_id] = a._proto.upgrade_id
 
         # Armory armory-plating upgrades are wrong from the API
-        self.upgrade_abilities.update(
-            {864: 116, 865: 117, 866: 118,}
-        )
+        self.upgrade_abilities.update({
+            864: 116,
+            865: 117,
+            866: 118,
+        })
 
         for id, a in self._game_data.units.items():
             a: UnitTypeData
@@ -450,7 +458,11 @@ class MyBot(sc2.BotAI):
 
             print("Units left:", len(self.unit_queue))
             self.current_unit = self.unit_queue.pop()
-            await self._client.debug_create_unit([[UnitTypeId(self.current_unit), 1, self._game_info.map_center, 1]])
+            current_unit_type_id = UnitTypeId(self.current_unit)
+            await self._client.debug_create_unit([[current_unit_type_id, 1, self._game_info.map_center, 1]])
+            # Create creep for queen to enable transfuse ability
+            if current_unit_type_id == UnitTypeId.QUEEN:
+                await self._client.debug_create_unit([[UnitTypeId.CREEPTUMOR, 9, self._game_info.map_center, 1]])
 
             self.time_left = 10
             self.__state = "WaitCreate"
@@ -565,9 +577,9 @@ class MyBot(sc2.BotAI):
 
                     # No requirements when all tech is locked
                     self.data_units[index]["abilities"] = [
-                        {"ability": a.value}
-                        for a in abilities
-                        if self.recognizes_ability(a.value)
+                        {
+                            "ability": a.value
+                        } for a in abilities if self.recognizes_ability(a.value)
                         and self.ability_specialization_allowed_for(a.value, unit._proto.unit_type)
                     ]
 

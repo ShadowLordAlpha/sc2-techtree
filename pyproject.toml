@@ -11,7 +11,14 @@ toml = "^0.10.2"
 six = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
+yapf = "^0.32.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "pep8"
+column_limit = 120
+split_arguments_when_comma_terminated = true
+dedent_closing_brackets = true
