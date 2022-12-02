@@ -100,6 +100,11 @@ class MyBot(sc2.BotAI):
         ):
             return None
 
+        optional = {}
+        if a._proto.remaps_to_ability_id and a._proto.remaps_to_ability_id != 0:
+            optional["remaps_to_ability_id"] = a._proto.remaps_to_ability_id
+
+
         morph_conditions = [
             "MORPH" in a.id.name and "AMORPHOUSARMORCLOUD" not in a.id.name,
             a.id.name.startswith("LARVATRAIN_"),
@@ -205,6 +210,7 @@ class MyBot(sc2.BotAI):
                 "cooldown": 0,
             },
             **build,
+            **optional,
         }
 
     def serialize_upgrade(self, a: UpgradeData) -> "MyBotSerializeUpgradeTypedDict":
