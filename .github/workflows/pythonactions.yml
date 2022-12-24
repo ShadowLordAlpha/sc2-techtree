@@ -6,26 +6,25 @@ name: Tests
 on: [push, pull_request]
 
 jobs:
-  run_pytest_tests:
-    # Run pytest tests on pickle files (pre-generated SC2 API observations)
-    name: Run pytest
+  set_up_environment:
+    name: Run poetry install
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        python-version: [3.7, 3.8, 3.9]
+        python-version: ["3.8", "3.9", "3.10"]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: |
-          python -m pip install poetry
+          pip install poetry
           poetry install
