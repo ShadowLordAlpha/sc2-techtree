@@ -8,15 +8,15 @@ from pathlib import Path
 import toml
 import json
 
-import sc2
-from sc2 import run_game, maps, Race, Difficulty
-from sc2.player import Bot, Computer
-from sc2.position import Point2
+from sc2.main import run_game
+from sc2 import maps
+from sc2.data import Race
+from sc2.player import Bot
 from sc2.ids.upgrade_id import UpgradeId
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
-from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
+from sc2.bot_ai import BotAI
 
 from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
 from typing import Any, Dict, List, Optional, Type, Union
@@ -69,7 +69,7 @@ TARGET_DIR = Path("generated") / "collect"
 TARGET_DIR.mkdir(exist_ok=True, parents=True)
 
 
-class MyBot(sc2.BotAI):
+class MyBot(BotAI):
 
     def __init__(self) -> None:
         super().__init__()
@@ -99,11 +99,6 @@ class MyBot(sc2.BotAI):
             or a.id.name.endswith("_BRIDGEEXTEND") or "CRITTER" in real_name
         ):
             return None
-
-        optional = {}
-        if a._proto.remaps_to_ability_id and a._proto.remaps_to_ability_id != 0:
-            optional["remaps_to_ability_id"] = a._proto.remaps_to_ability_id
-
 
         morph_conditions = [
             "MORPH" in a.id.name and "AMORPHOUSARMORCLOUD" not in a.id.name,
@@ -196,6 +191,10 @@ class MyBot(sc2.BotAI):
             build = {"target": target_name}
         else:
             build = {"target": target_name}
+
+        optional = {}
+        if a._proto.remaps_to_ability_id and a._proto.remaps_to_ability_id != 0:
+            optional["remaps_to_ability_id"] = a._proto.remaps_to_ability_id
 
         return {
             **{
