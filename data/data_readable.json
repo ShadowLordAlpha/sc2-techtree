@@ -398,23 +398,6 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 80,
-            "name": "MORPHZERGLINGTOBANELING_BANELING",
-            "target": {
-                "Morph": {
-                    "produces": 9,
-                    "produces_name": "BANELING"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
             "id": 110,
             "name": "NEXUSTRAINMOTHERSHIP_MOTHERSHIP",
             "target": {
@@ -2744,40 +2727,6 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 821,
-            "name": "GHOSTACADEMYRESEARCH_RESEARCHGHOSTENERGYUPGRADE",
-            "target": {
-                "Research": {
-                    "upgrade": 26,
-                    "upgrade_name": "GHOSTMOEBIUSREACTOR"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 822,
-            "name": "GHOSTACADEMYRESEARCH_RESEARCHENHANCEDSHOCKWAVES",
-            "target": {
-                "Research": {
-                    "upgrade": 297,
-                    "upgrade_name": "ENHANCEDSHOCKWAVES"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
             "id": 852,
             "name": "ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL1",
             "target": {
@@ -4395,8 +4344,8 @@
             "name": "EVOLUTIONCHAMBERRESEARCH_EVOLVEPROPULSIVEPERISTALSIS",
             "target": {
                 "Research": {
-                    "upgrade": 302,
-                    "upgrade_name": "SECRETEDCOATING"
+                    "upgrade": 301,
+                    "upgrade_name": "PSIONICAMPLIFIERS"
                 }
             }
         },
@@ -5611,8 +5560,8 @@
             "name": "INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD",
             "target": {
                 "Research": {
-                    "upgrade": 298,
-                    "upgrade_name": "MICROBIALSHROUD"
+                    "upgrade": 297,
+                    "upgrade_name": "ENHANCEDSHOCKWAVES"
                 }
             }
         },
@@ -6120,8 +6069,8 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICSURGE",
             "target": {
                 "Research": {
-                    "upgrade": 299,
-                    "upgrade_name": "SUNDERINGIMPACT"
+                    "upgrade": 298,
+                    "upgrade_name": "MICROBIALSHROUD"
                 }
             }
         },
@@ -6137,8 +6086,8 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHAMPLIFIEDSHIELDING",
             "target": {
                 "Research": {
-                    "upgrade": 300,
-                    "upgrade_name": "AMPLIFIEDSHIELDING"
+                    "upgrade": 299,
+                    "upgrade_name": "SUNDERINGIMPACT"
                 }
             }
         },
@@ -6154,8 +6103,8 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICAMPLIFIERS",
             "target": {
                 "Research": {
-                    "upgrade": 301,
-                    "upgrade_name": "PSIONICAMPLIFIERS"
+                    "upgrade": 300,
+                    "upgrade_name": "AMPLIFIEDSHIELDING"
                 }
             }
         },
@@ -10641,9 +10590,6 @@
                     "ability": 820
                 },
                 {
-                    "ability": 822
-                },
-                {
                     "ability": 710,
                     "requirements": [
                         {
@@ -10995,7 +10941,7 @@
                 }
             ],
             "accepts_addon": false,
-            "armor": 1.0,
+            "armor": 0.0,
             "attributes": [
                 "Armored",
                 "Mechanical",
@@ -11008,7 +10954,7 @@
             "is_structure": true,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 150.0,
+            "max_health": 100.0,
             "minerals": 100,
             "name": "AutoTurret",
             "needs_creep": false,
@@ -11520,9 +11466,6 @@
             "abilities": [
                 {
                     "ability": 790
-                },
-                {
-                    "ability": 793
                 },
                 {
                     "ability": 799
@@ -12574,7 +12517,7 @@
                 "Mechanical"
             ],
             "detection_range": 11.0,
-            "gas": 200,
+            "gas": 150,
             "id": 56,
             "is_addon": false,
             "is_flying": true,
@@ -12596,7 +12539,7 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
-            "time": 960.0,
+            "time": 768.0,
             "weapons": []
         },
         {
@@ -13684,7 +13627,7 @@
             "radius": 0.375,
             "sight": 10.0,
             "size": 0,
-            "speed": 1.875,
+            "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
@@ -13868,11 +13811,11 @@
             "radius": 0.5,
             "sight": 10.0,
             "size": 0,
-            "speed": 2.25,
+            "speed": 2.5,
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
-            "time": 592.0,
+            "time": 512.0,
             "weapons": []
         },
         {
@@ -14166,7 +14109,7 @@
             "radius": 0.5,
             "sight": 11.0,
             "size": 0,
-            "speed": 1.875,
+            "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
             "time": 480.0,
@@ -14529,7 +14472,7 @@
             "needs_power": false,
             "race": "Zerg",
             "radius": 2.75,
-            "sight": 10.0,
+            "sight": 12.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
@@ -14537,14 +14480,7 @@
             "weapons": []
         },
         {
-            "abilities": [
-                {
-                    "ability": 1733
-                },
-                {
-                    "ability": 1
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -14567,7 +14503,7 @@
             "needs_power": false,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -15651,14 +15587,6 @@
                     "ability": 1
                 },
                 {
-                    "ability": 80,
-                    "requirements": [
-                        {
-                            "building": 96
-                        }
-                    ]
-                },
-                {
                     "ability": 1390,
                     "requirements": [
                         {
@@ -15969,7 +15897,7 @@
             "needs_geyser": false,
             "needs_power": false,
             "race": "Zerg",
-            "radius": 1.0,
+            "radius": 0.875,
             "sight": 9.0,
             "size": 0,
             "speed": 2.953125,
@@ -16301,7 +16229,7 @@
             "radius": 1.0,
             "sight": 12.0,
             "size": 0,
-            "speed": 1.40625,
+            "speed": 1.6015625,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
             "time": 541.34765625,
@@ -16952,7 +16880,7 @@
             "needs_power": false,
             "normal_mode": 109,
             "race": "Zerg",
-            "radius": 1.0,
+            "radius": 0.875,
             "sight": 5.0,
             "size": 0,
             "speed_creep_mul": 1.0,
@@ -17236,7 +17164,7 @@
             "normal_mode": 87,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -17244,14 +17172,7 @@
             "weapons": []
         },
         {
-            "abilities": [
-                {
-                    "ability": 1733
-                },
-                {
-                    "ability": 1
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -17275,7 +17196,7 @@
             "normal_mode": 87,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -19127,7 +19048,7 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
-            "time": 196.0,
+            "time": 272.0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19170,7 +19091,7 @@
                 "Armored",
                 "Mechanical"
             ],
-            "gas": 150,
+            "gas": 125,
             "id": 689,
             "is_addon": false,
             "is_flying": true,
@@ -19927,7 +19848,7 @@
                 "Armored",
                 "Mechanical"
             ],
-            "gas": 150,
+            "gas": 125,
             "id": 734,
             "is_addon": false,
             "is_flying": true,
@@ -20820,7 +20741,7 @@
             "sight": 9.0,
             "size": 0,
             "speed_creep_mul": 1.0,
-            "start_energy": 100,
+            "start_energy": 78,
             "supply": 0.0,
             "time": 640.0,
             "weapons": []
@@ -21301,15 +21222,6 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 1280.0
-            },
-            "id": 26,
-            "name": "GhostMoebiusReactor"
-        },
-        {
-            "cost": {
-                "gas": 100,
-                "minerals": 100,
                 "time": 2560.0
             },
             "id": 27,
@@ -21418,7 +21330,7 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 39,
             "name": "ProtossGroundWeaponsLevel1"
@@ -21427,7 +21339,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 40,
             "name": "ProtossGroundWeaponsLevel2"
@@ -21436,7 +21348,7 @@
             "cost": {
                 "gas": 200,
                 "minerals": 200,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 41,
             "name": "ProtossGroundWeaponsLevel3"
@@ -21445,7 +21357,7 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 42,
             "name": "ProtossGroundArmorsLevel1"
@@ -21454,7 +21366,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 43,
             "name": "ProtossGroundArmorsLevel2"
@@ -21463,7 +21375,7 @@
             "cost": {
                 "gas": 200,
                 "minerals": 200,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 44,
             "name": "ProtossGroundArmorsLevel3"
@@ -21472,7 +21384,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 45,
             "name": "ProtossShieldsLevel1"
@@ -21481,7 +21393,7 @@
             "cost": {
                 "gas": 225,
                 "minerals": 225,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 46,
             "name": "ProtossShieldsLevel2"
@@ -21490,7 +21402,7 @@
             "cost": {
                 "gas": 300,
                 "minerals": 300,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 47,
             "name": "ProtossShieldsLevel3"
@@ -22019,9 +21931,9 @@
         },
         {
             "cost": {
-                "gas": 150,
-                "minerals": 150,
-                "time": 2720.0
+                "gas": 125,
+                "minerals": 125,
+                "time": 2240.0
             },
             "id": 136,
             "name": "BansheeSpeed"
@@ -22150,15 +22062,6 @@
                 "time": 1760.0
             },
             "id": 297,
-            "name": "EnhancedShockwaves"
-        },
-        {
-            "cost": {
-                "gas": 150,
-                "minerals": 150,
-                "time": 1760.0
-            },
-            "id": 298,
             "name": "MicrobialShroud"
         },
         {
@@ -22167,7 +22070,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 299,
+            "id": 298,
             "name": "SunderingImpact"
         },
         {
@@ -22176,7 +22079,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 300,
+            "id": 299,
             "name": "AmplifiedShielding"
         },
         {
@@ -22185,7 +22088,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 301,
+            "id": 300,
             "name": "PsionicAmplifiers"
         },
         {
@@ -22194,7 +22097,7 @@
                 "minerals": 100,
                 "time": 1280.0
             },
-            "id": 302,
+            "id": 301,
             "name": "SecretedCoating"
         }
     ]

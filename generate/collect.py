@@ -8,9 +8,11 @@ from pathlib import Path
 import toml
 import json
 
-import sc2
-from sc2 import run_game, maps, Race, Difficulty
+from sc2.bot_ai import BotAI
+from sc2.data import Race
+from sc2.main import run_game
 from sc2.player import Bot, Computer
+from sc2 import maps
 from sc2.position import Point2
 from sc2.ids.upgrade_id import UpgradeId
 from sc2.ids.ability_id import AbilityId
@@ -22,6 +24,7 @@ from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
 from typing import Any, Dict, List, Optional, Type, Union
 
 from dataclasses import dataclass
+from loguru import logger
 
 
 @dataclass()
@@ -69,7 +72,7 @@ TARGET_DIR = Path("generated") / "collect"
 TARGET_DIR.mkdir(exist_ok=True, parents=True)
 
 
-class MyBot(sc2.BotAI):
+class MyBot(BotAI):
 
     def __init__(self) -> None:
         super().__init__()
@@ -453,16 +456,17 @@ class MyBot(sc2.BotAI):
                 with (TARGET_DIR / "ability.toml").open("w") as f:
                     f.write(toml.dumps({"Ability": self.data_abilities}))
 
-                await self._client.leave()
+                await self.client.leave()
                 return
 
-            print("Units left:", len(self.unit_queue))
+            logger.info(f"Units left: {len(self.unit_queue)}")
             self.current_unit = self.unit_queue.pop()
             current_unit_type_id = UnitTypeId(self.current_unit)
-            await self._client.debug_create_unit([[current_unit_type_id, 1, self._game_info.map_center, 1]])
+            logger.info(f"Spawning unit type: {current_unit_type_id}")
+            await self.client.debug_create_unit([[current_unit_type_id, 1, self.game_info.map_center, 1]])
             # Create creep for queen to enable transfuse ability
             if current_unit_type_id == UnitTypeId.QUEEN:
-                await self._client.debug_create_unit([[UnitTypeId.CREEPTUMOR, 9, self._game_info.map_center, 1]])
+                await self.client.debug_create_unit([[UnitTypeId.CREEPTUMOR, 9, self.game_info.map_center, 1]])
 
             self.time_left = 10
             self.__state = "WaitCreate"
@@ -470,7 +474,7 @@ class MyBot(sc2.BotAI):
         elif self.__state == "WaitCreate":
             if len(self.all_own_units) == 0 and self.current_unit == UnitTypeId.LARVA.value:
                 # Larva cannot be created without a hatchery
-                await self._client.debug_create_unit([[UnitTypeId.HATCHERY, 1, self._game_info.map_center, 1]])
+                await self.client.debug_create_unit([[UnitTypeId.HATCHERY, 1, self.game_info.map_center, 1]])
                 self.wait_steps = 10
                 return
             elif len(self.all_own_units) == 0:
@@ -528,8 +532,8 @@ class MyBot(sc2.BotAI):
                         assert len(self.all_own_units) == 2 and all(u.is_ready for u in self.all_own_units)
                         # Building and addon both created
                     else:
-                        await self._client.debug_create_unit([[ut, 1, self._game_info.map_center, 1]])
-                        await self._client.debug_kill_unit([unit.tag])
+                        await self.client.debug_create_unit([[ut, 1, self.game_info.map_center, 1]])
+                        await self.client.debug_kill_unit([unit.tag])
                         self.wait_steps = 100
                         self.__state = "BuildAddOn"
                         return
@@ -544,9 +548,9 @@ class MyBot(sc2.BotAI):
                     else:
                         if self.current_unit == UnitTypeId.GATEWAY.value:
                             # Disable autocast of warpgate morph
-                            await self._client.toggle_autocast([unit], AbilityId.MORPH_WARPGATE)
+                            await self.client.toggle_autocast([unit], AbilityId.MORPH_WARPGATE)
 
-                        await self._client.debug_create_unit([[UnitTypeId.PYLON, 1, self._game_info.map_center, 1]])
+                        await self.client.debug_create_unit([[UnitTypeId.PYLON, 1, self.game_info.map_center, 1]])
 
                         self.wait_steps = 200
                         return
@@ -584,7 +588,7 @@ class MyBot(sc2.BotAI):
                     ]
 
                     # See requirement-depending upgrades with tech
-                    await self._client.debug_tech_tree()
+                    await self.client.debug_tech_tree()
                     self.__state = "TechCheck"
 
                 except ValueError as e:
@@ -613,9 +617,9 @@ class MyBot(sc2.BotAI):
 
                 abilities = (await self.get_available_abilities([unit], ignore_resource_requirements=True))[0]
 
-                print("#", unit)
+                logger.info(f"# {unit}")
                 for a in abilities:
-                    print(">", a)
+                    logger.info(f"> {a}")
                     if not self.recognizes_ability(a.value):
                         continue
 
@@ -626,7 +630,7 @@ class MyBot(sc2.BotAI):
                         self.data_units[index]["abilities"].append({"requirements": "???", "ability": a.value})
 
             # Switch all tech back off
-            await self._client.debug_tech_tree()
+            await self.client.debug_tech_tree()
             self.__state = "Clear"
 
         elif self.__state == "WaitCreate":
@@ -643,14 +647,14 @@ class MyBot(sc2.BotAI):
                 else:
                     # Kill broodlings etc
                     for u in self.all_units:
-                        await self._client.debug_kill_unit([u.tag])
+                        await self.client.debug_kill_unit([u.tag])
                         self.wait_steps = 20
             else:
                 self.__state = "Empty"
 
         if self.__state == "Clear":
             for u in self.all_units:
-                await self._client.debug_kill_unit([u.tag])
+                await self.client.debug_kill_unit([u.tag])
                 self.wait_steps = 20
 
             self.current_unit = None
@@ -659,9 +663,8 @@ class MyBot(sc2.BotAI):
 
     async def on_step(self, iteration: int) -> None:
         # Fix for burnysc2 library
-        self.all_own_units = self.units | self.structures
         for unit in self.all_own_units:
-            self._client.debug_text_world(
+            self.client.debug_text_world(
                 f"{unit.type_id.name}:{unit.type_id.value}\n({unit.position})",
                 unit.position3d,
                 color=(0, 255, 0),
@@ -670,10 +673,10 @@ class MyBot(sc2.BotAI):
 
         # Create all units (including structures) to get more info
         if iteration == 0:
-            await self._client.debug_fast_build()  # Must build addons
-            await self._client.debug_cooldown()
-            await self._client.debug_all_resources()  # Must build addons
-            await self._client.debug_god()  # Larva must not die
+            await self.client.debug_fast_build()  # Must build addons
+            await self.client.debug_cooldown()
+            await self.client.debug_all_resources()  # Must build addons
+            await self.client.debug_god()  # Larva must not die
         else:
             await self.state_step()
 
