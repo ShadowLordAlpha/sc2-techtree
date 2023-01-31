@@ -5,7 +5,7 @@ name: Tests
 on: [push, pull_request]
 
 jobs:
-  run_pytest_tests:
+  set_up_environment:
     name: Run poetry install
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
@@ -25,5 +25,5 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install poetry
+          pip install poetry
           poetry install

@@ -11,14 +11,12 @@ import json
 from sc2.bot_ai import BotAI
 from sc2.data import Race
 from sc2.main import run_game
-from sc2.player import Bot, Computer
+from sc2.player import Bot
 from sc2 import maps
-from sc2.position import Point2
 from sc2.ids.upgrade_id import UpgradeId
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
 from s2clientprotocol.data_pb2 import AbilityData as AbilityDataProto, Weapon, Attribute
-from s2clientprotocol.raw_pb2 import ActionRaw, ActionRawToggleAutocast
 
 from sc2.game_data import AbilityData, UnitTypeData, UpgradeData
 from typing import Any, Dict, List, Optional, Type, Union
@@ -195,6 +193,10 @@ class MyBot(BotAI):
         else:
             build = {"target": target_name}
 
+        optional = {}
+        if a._proto.remaps_to_ability_id and a._proto.remaps_to_ability_id != 0:
+            optional["remaps_to_ability_id"] = a._proto.remaps_to_ability_id
+
         return {
             **{
                 "id": real_id,
@@ -208,6 +210,7 @@ class MyBot(BotAI):
                 "cooldown": 0,
             },
             **build,
+            **optional,
         }
 
     def serialize_upgrade(self, a: UpgradeData) -> "MyBotSerializeUpgradeTypedDict":
