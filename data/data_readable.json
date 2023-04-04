@@ -17480,7 +17480,14 @@
             "weapons": []
         },
         {
-            "abilities": [],
+            "abilities": [
+                {
+                    "ability": 1733
+                },
+                {
+                    "ability": 1
+                }
+            ],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -17818,20 +17825,16 @@
         {
             "abilities": [
                 {
-                    "ability": 16,
-                    "requirements": []
+                    "ability": 16
                 },
                 {
-                    "ability": 17,
-                    "requirements": []
+                    "ability": 17
                 },
                 {
-                    "ability": 18,
-                    "requirements": []
+                    "ability": 18
                 },
                 {
-                    "ability": 1,
-                    "requirements": []
+                    "ability": 1
                 }
             ],
             "accepts_addon": false,
@@ -17853,7 +17856,7 @@
             "needs_geyser": false,
             "needs_power": false,
             "race": "Zerg",
-            "radius": 0.5,
+            "radius": 0.375,
             "sight": 0.0,
             "size": 0,
             "speed_creep_mul": 1.0,

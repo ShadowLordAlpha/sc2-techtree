@@ -424,18 +424,6 @@ requirements = [ { "building" = 72 } ] # Cybernetics core
 [145.382] # GhostNova - BEHAVIOR_CLOAKON_GHOST
 requirements = [] # Not in the game
 
-[150.1] # InfestedTerransEgg - SMART
-requirements = [] # Not in the game
-
-[150.18] # InfestedTerransEgg - HOLDPOSITION_HOLD
-requirements = [] # Not in the game
-
-[150.17] # InfestedTerransEgg - PATROL_PATROL
-requirements = [] # Not in the game
-
-[150.16] # InfestedTerransEgg - MOVE_MOVE
-requirements = [] # Not in the game
-
 [151.1343] # Larva - LARVATRAIN_ZERGLING
 requirements = [ { "building" = 89 } ] # Spawning pool
 
