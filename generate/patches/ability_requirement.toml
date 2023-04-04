@@ -325,14 +325,17 @@ requirements = [ { "building" = 89 } ] # Spawning pool
 [104.1167] # Drone - ZERGBUILD_SPORECRAWLER
 requirements = [ { "building" = 89 } ] # Spawning pool
 
-[105.80] # Zergling - MORPHZERGLINGTOBANELING_BANELING
-requirements = [ { "building" = 96 } ] # Baneling nest
-
 [104.1378] # Drone - BURROWDOWN_DRONE
 requirements = [ { "upgrade" =  64 } ] # Burrow
 
+[105.80] # Zergling - MORPHZERGLINGTOBANELING_BANELING
+requirements = [ { "building" = 96 } ] # Baneling nest
+
 [105.1390] # Zergling - BURROWDOWN_ZERGLING
 requirements = [ { "upgrade" =  64 } ] # Burrow
+
+[105.4119] # Zergling - MORPHTOBANELING_BANELING
+requirements = [ { "building" = 96 } ] # Baneling nest
 
 [106.1448] # Overlord - MORPH_OVERSEER
 requirements = [ { "building" = 100 } ] # Lair
@@ -419,7 +422,19 @@ requirements = [ { "building" = 72 } ] # Cybernetics core
 # requirements = []
 
 [145.382] # GhostNova - BEHAVIOR_CLOAKON_GHOST
-requirements = [] # No in the game
+requirements = [] # Not in the game
+
+[150.1] # InfestedTerransEgg - SMART
+requirements = [] # Not in the game
+
+[150.18] # InfestedTerransEgg - HOLDPOSITION_HOLD
+requirements = [] # Not in the game
+
+[150.17] # InfestedTerransEgg - PATROL_PATROL
+requirements = [] # Not in the game
+
+[150.16] # InfestedTerransEgg - MOVE_MOVE
+requirements = [] # Not in the game
 
 [151.1343] # Larva - LARVATRAIN_ZERGLING
 requirements = [ { "building" = 89 } ] # Spawning pool

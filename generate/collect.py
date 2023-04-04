@@ -42,22 +42,19 @@ class MyBotSerializeUpgradeTypedDict:
 def remove_prefix(s: str, prefix: str) -> str:
     if s.startswith(prefix):
         return s[len(prefix):]
-    else:
-        return s
+    return s
 
 
 def remove_postfix(s: str, postfix: str) -> str:
     if s.endswith(postfix):
         return s[:-len(postfix)]
-    else:
-        return s
+    return s
 
 
 def if_nonzero(v: Union[float, int], fn: Optional[Type[int]] = None) -> Optional[Union[int, float]]:
     if fn:
         return fn(v) if v != 0 else None
-    else:
-        return v if v != 0 else None
+    return v if v != 0 else None
 
 
 # Specialization
@@ -361,7 +358,7 @@ class MyBot(BotAI):
 
     async def on_start(self) -> None:
         id: int
-        for id, a in self._game_data.upgrades.items():
+        for id, a in self.game_data.upgrades.items():
             a: UpgradeData
             if a._proto.name != "" and a._proto.HasField("research_time"):
                 self.data_upgrades.append(self.serialize_upgrade(a))
