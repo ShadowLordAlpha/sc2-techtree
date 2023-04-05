@@ -9622,8 +9622,7 @@
             "name": "MORPHTOBANELING_BANELING",
             "target": {
                 "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
+                    "produces": 9
                 }
             }
         },
