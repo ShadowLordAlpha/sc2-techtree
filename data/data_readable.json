@@ -413,23 +413,6 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 80,
-            "name": "MORPHZERGLINGTOBANELING_BANELING",
-            "target": {
-                "Morph": {
-                    "produces": 9,
-                    "produces_name": "BANELING"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
             "id": 110,
             "name": "NEXUSTRAINMOTHERSHIP_MOTHERSHIP",
             "target": {
@@ -2825,40 +2808,6 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 821,
-            "name": "GHOSTACADEMYRESEARCH_RESEARCHGHOSTENERGYUPGRADE",
-            "target": {
-                "Research": {
-                    "upgrade": 26,
-                    "upgrade_name": "GHOSTMOEBIUSREACTOR"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 822,
-            "name": "GHOSTACADEMYRESEARCH_RESEARCHENHANCEDSHOCKWAVES",
-            "target": {
-                "Research": {
-                    "upgrade": 297,
-                    "upgrade_name": "ENHANCEDSHOCKWAVES"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
             "id": 852,
             "name": "ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL1",
             "target": {
@@ -4515,7 +4464,7 @@
             "name": "EVOLUTIONCHAMBERRESEARCH_EVOLVEPROPULSIVEPERISTALSIS",
             "target": {
                 "Research": {
-                    "upgrade": 302,
+                    "upgrade": 301,
                     "upgrade_name": "SECRETEDCOATING"
                 }
             }
@@ -5775,7 +5724,7 @@
             "name": "INFESTATIONPITRESEARCH_EVOLVEAMORPHOUSARMORCLOUD",
             "target": {
                 "Research": {
-                    "upgrade": 298,
+                    "upgrade": 297,
                     "upgrade_name": "MICROBIALSHROUD"
                 }
             }
@@ -6300,7 +6249,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICSURGE",
             "target": {
                 "Research": {
-                    "upgrade": 299,
+                    "upgrade": 298,
                     "upgrade_name": "SUNDERINGIMPACT"
                 }
             }
@@ -6317,7 +6266,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHAMPLIFIEDSHIELDING",
             "target": {
                 "Research": {
-                    "upgrade": 300,
+                    "upgrade": 299,
                     "upgrade_name": "AMPLIFIEDSHIELDING"
                 }
             }
@@ -6334,7 +6283,7 @@
             "name": "TWILIGHTCOUNCILRESEARCH_RESEARCHPSIONICAMPLIFIERS",
             "target": {
                 "Research": {
-                    "upgrade": 301,
+                    "upgrade": 300,
                     "upgrade_name": "PSIONICAMPLIFIERS"
                 }
             }
@@ -8691,6 +8640,19 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
+            "id": 2715,
+            "name": "CHANNELSNIPE_CANCEL",
+            "remaps_to_ability_id": 3659,
+            "target": "None"
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
             "id": 2716,
             "name": "PURIFYMORPHPYLON_MOTHERSHIPCOREWEAPON",
             "target": {
@@ -9581,1851 +9543,9 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 3817,
-            "name": "DUMMYABIL6_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3823,
-            "name": "DUMMYABIL12_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3824,
-            "name": "DUMMYABIL13_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3825,
-            "name": "DUMMYABIL14_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3826,
-            "name": "DUMMYABIL15_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3827,
-            "name": "DUMMYABIL16_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3828,
-            "name": "DUMMYABIL17_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3829,
-            "name": "DUMMYABIL18_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3830,
-            "name": "DUMMYABIL19_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3831,
-            "name": "DUMMYABIL20_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3832,
-            "name": "DUMMYABIL21_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3833,
-            "name": "DUMMYABIL22_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3834,
-            "name": "DUMMYABIL23_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3835,
-            "name": "DUMMYABIL24_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3836,
-            "name": "DUMMYABIL25_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3837,
-            "name": "DUMMYABIL26_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3838,
-            "name": "DUMMYABIL27_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3839,
-            "name": "DUMMYABIL28_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3840,
-            "name": "DUMMYABIL29_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3841,
-            "name": "DUMMYABIL30_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3842,
-            "name": "DUMMYABIL31_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3843,
-            "name": "DUMMYABIL32_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3844,
-            "name": "DUMMYABIL33_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3845,
-            "name": "DUMMYABIL34_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3846,
-            "name": "DUMMYABIL35_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3847,
-            "name": "DUMMYABIL36_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3848,
-            "name": "DUMMYABIL37_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3849,
-            "name": "DUMMYABIL38_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3850,
-            "name": "DUMMYABIL39_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3851,
-            "name": "DUMMYABIL40_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3852,
-            "name": "DUMMYABIL41_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3853,
-            "name": "DUMMYABIL42_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3854,
-            "name": "DUMMYABIL43_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3855,
-            "name": "DUMMYABIL44_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3856,
-            "name": "DUMMYABIL45_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3857,
-            "name": "DUMMYABIL46_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3858,
-            "name": "DUMMYABIL47_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3859,
-            "name": "DUMMYABIL48_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3860,
-            "name": "DUMMYABIL49_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3861,
-            "name": "DUMMYABIL50_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3862,
-            "name": "DUMMYABIL51_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3863,
-            "name": "DUMMYABIL52_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3864,
-            "name": "DUMMYABIL53_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3865,
-            "name": "DUMMYABIL54_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3866,
-            "name": "DUMMYABIL55_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3867,
-            "name": "DUMMYABIL56_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3868,
-            "name": "DUMMYABIL57_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3869,
-            "name": "DUMMYABIL58_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3870,
-            "name": "DUMMYABIL59_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3871,
-            "name": "DUMMYABIL60_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3872,
-            "name": "DUMMYABIL61_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3873,
-            "name": "DUMMYABIL62_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3874,
-            "name": "DUMMYABIL63_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3875,
-            "name": "DUMMYABIL64_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3876,
-            "name": "DUMMYABIL65_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3877,
-            "name": "DUMMYABIL66_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3878,
-            "name": "DUMMYABIL67_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3879,
-            "name": "DUMMYABIL68_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3880,
-            "name": "DUMMYABIL69_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3881,
-            "name": "DUMMYABIL70_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3882,
-            "name": "DUMMYABIL71_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3883,
-            "name": "DUMMYABIL72_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3884,
-            "name": "DUMMYABIL73_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3886,
-            "name": "DUMMYABIL75_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3887,
-            "name": "DUMMYABIL76_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3888,
-            "name": "DUMMYABIL77_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3891,
-            "name": "DUMMYABIL80_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3892,
-            "name": "DUMMYABIL81_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3893,
-            "name": "DUMMYABIL82_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3894,
-            "name": "DUMMYABIL83_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3895,
-            "name": "DUMMYABIL84_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3896,
-            "name": "DUMMYABIL85_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3897,
-            "name": "DUMMYABIL86_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3898,
-            "name": "DUMMYABIL87_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3899,
-            "name": "DUMMYABIL88_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3902,
-            "name": "DUMMYABIL91_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3903,
-            "name": "DUMMYABIL92_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3904,
-            "name": "DUMMYABIL93_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3905,
-            "name": "DUMMYABIL94_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3906,
-            "name": "DUMMYABIL95_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3907,
-            "name": "DUMMYABIL96_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3908,
-            "name": "DUMMYABIL97_MEDIVACSPEEDBOOST",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3910,
-            "name": "DUMMYABIL99_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3911,
-            "name": "DUMMYABIL100_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3912,
-            "name": "DUMMYABIL101_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3913,
-            "name": "DUMMYABIL102_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3914,
-            "name": "DUMMYABIL103_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3915,
-            "name": "DUMMYABIL104_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3916,
-            "name": "DUMMYABIL105_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3917,
-            "name": "DUMMYABIL106_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3918,
-            "name": "DUMMYABIL107_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3919,
-            "name": "DUMMYABIL108_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3920,
-            "name": "DUMMYABIL109_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3921,
-            "name": "DUMMYABIL110_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3924,
-            "name": "DUMMYABIL113_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3925,
-            "name": "DUMMYABIL114_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3926,
-            "name": "DUMMYABIL115_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3927,
-            "name": "DUMMYABIL116_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3928,
-            "name": "DUMMYABIL117_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3929,
-            "name": "DUMMYABIL118_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3930,
-            "name": "DUMMYABIL119_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3931,
-            "name": "DUMMYABIL120_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3932,
-            "name": "DUMMYABIL121_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3933,
-            "name": "DUMMYABIL122_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3934,
-            "name": "DUMMYABIL123_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3935,
-            "name": "DUMMYABIL124_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3936,
-            "name": "DUMMYABIL125_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3937,
-            "name": "DUMMYABIL126_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3938,
-            "name": "DUMMYABIL127_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3939,
-            "name": "DUMMYABIL128_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3940,
-            "name": "DUMMYABIL129_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3941,
-            "name": "DUMMYABIL130_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3942,
-            "name": "DUMMYABIL131_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3943,
-            "name": "DUMMYABIL132_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3944,
-            "name": "DUMMYABIL133_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3945,
-            "name": "DUMMYABIL134_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3946,
-            "name": "DUMMYABIL135_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3947,
-            "name": "DUMMYABIL136_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3948,
-            "name": "DUMMYABIL137_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3949,
-            "name": "DUMMYABIL138_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3950,
-            "name": "DUMMYABIL139_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3951,
-            "name": "DUMMYABIL140_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3952,
-            "name": "DUMMYABIL141_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3953,
-            "name": "DUMMYABIL142_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3954,
-            "name": "DUMMYABIL143_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3955,
-            "name": "DUMMYABIL144_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3956,
-            "name": "DUMMYABIL145_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3957,
-            "name": "DUMMYABIL146_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3958,
-            "name": "DUMMYABIL147_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3959,
-            "name": "DUMMYABIL148_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3960,
-            "name": "DUMMYABIL149_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3961,
-            "name": "DUMMYABIL150_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3962,
-            "name": "DUMMYABIL151_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3963,
-            "name": "DUMMYABIL152_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3964,
-            "name": "DUMMYABIL153_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3965,
-            "name": "DUMMYABIL154_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3966,
-            "name": "DUMMYABIL155_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
             "id": 3967,
-            "name": "DUMMYABIL156_MEDIVACSPEEDBOOST",
+            "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPLEFTGREEN_CANCEL",
             "remaps_to_ability_id": 3659,
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3968,
-            "name": "DUMMYABIL157_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3969,
-            "name": "DUMMYABIL158_MEDIVACSPEEDBOOST",
             "target": "None"
         },
         {
@@ -11437,1436 +9557,8 @@
             "effect": [],
             "energy_cost": 0,
             "id": 3970,
-            "name": "DUMMYABIL159_MEDIVACSPEEDBOOST",
+            "name": "MORPHTOCOLLAPSIBLEROCKTOWERDEBRISRAMPRIGHTGREEN_CANCEL",
             "remaps_to_ability_id": 3659,
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3971,
-            "name": "DUMMYABIL160_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3972,
-            "name": "DUMMYABIL161_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3973,
-            "name": "DUMMYABIL162_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3974,
-            "name": "DUMMYABIL163_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3975,
-            "name": "DUMMYABIL164_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3980,
-            "name": "DUMMYABIL169_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3981,
-            "name": "DUMMYABIL170_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3982,
-            "name": "DUMMYABIL171_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3983,
-            "name": "DUMMYABIL172_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3984,
-            "name": "DUMMYABIL173_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3985,
-            "name": "DUMMYABIL174_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3986,
-            "name": "DUMMYABIL175_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3987,
-            "name": "DUMMYABIL176_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3988,
-            "name": "DUMMYABIL177_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3989,
-            "name": "DUMMYABIL178_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3990,
-            "name": "DUMMYABIL179_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3991,
-            "name": "DUMMYABIL180_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3992,
-            "name": "DUMMYABIL181_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3993,
-            "name": "DUMMYABIL182_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3994,
-            "name": "DUMMYABIL183_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3995,
-            "name": "DUMMYABIL184_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3996,
-            "name": "DUMMYABIL185_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3997,
-            "name": "DUMMYABIL186_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3998,
-            "name": "DUMMYABIL187_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 3999,
-            "name": "DUMMYABIL188_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4000,
-            "name": "DUMMYABIL189_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4001,
-            "name": "DUMMYABIL190_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4002,
-            "name": "DUMMYABIL191_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4003,
-            "name": "DUMMYABIL192_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4004,
-            "name": "DUMMYABIL193_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4005,
-            "name": "DUMMYABIL194_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4006,
-            "name": "DUMMYABIL195_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4007,
-            "name": "DUMMYABIL196_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4008,
-            "name": "DUMMYABIL197_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4009,
-            "name": "DUMMYABIL198_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4010,
-            "name": "DUMMYABIL199_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4011,
-            "name": "DUMMYABIL200_MEDIVACSPEEDBOOST",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4024,
-            "name": "DUMMYABIL213_DUMMYABIL213",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4025,
-            "name": "DUMMYABIL214_DUMMYABIL214",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4026,
-            "name": "DUMMYABIL215_DUMMYABIL215",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4027,
-            "name": "DUMMYABIL216_DUMMYABIL216",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4028,
-            "name": "DUMMYABIL217_DUMMYABIL217",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4029,
-            "name": "DUMMYABIL218_DUMMYABIL218",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4030,
-            "name": "DUMMYABIL219_DUMMYABIL219",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4031,
-            "name": "DUMMYABIL220_DUMMYABIL220",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4032,
-            "name": "DUMMYABIL221_DUMMYABIL221",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4033,
-            "name": "DUMMYABIL222_DUMMYABIL222",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4034,
-            "name": "DUMMYABIL223_DUMMYABIL223",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4035,
-            "name": "DUMMYABIL224_DUMMYABIL224",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4036,
-            "name": "DUMMYABIL225_DUMMYABIL225",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4038,
-            "name": "DUMMYABIL227_DUMMYABIL227",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4039,
-            "name": "DUMMYABIL228_DUMMYABIL228",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4040,
-            "name": "DUMMYABIL229_DUMMYABIL229",
-            "remaps_to_ability_id": 3661,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4041,
-            "name": "DUMMYABIL230_DUMMYABIL230",
-            "remaps_to_ability_id": 3662,
-            "target": {
-                "Morph": {
-                    "produces": 0,
-                    "produces_name": "NOTAUNIT"
-                }
-            }
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4043,
-            "name": "DUMMYABIL232_DUMMYABIL232",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4044,
-            "name": "DUMMYABIL233_DUMMYABIL233",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4045,
-            "name": "DUMMYABIL234_DUMMYABIL234",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4046,
-            "name": "DUMMYABIL235_DUMMYABIL235",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4047,
-            "name": "DUMMYABIL236_DUMMYABIL236",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4048,
-            "name": "DUMMYABIL237_DUMMYABIL237",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4049,
-            "name": "DUMMYABIL238_DUMMYABIL238",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4050,
-            "name": "DUMMYABIL239_DUMMYABIL239",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4051,
-            "name": "DUMMYABIL240_DUMMYABIL240",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4052,
-            "name": "DUMMYABIL241_DUMMYABIL241",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4053,
-            "name": "DUMMYABIL242_DUMMYABIL242",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4054,
-            "name": "DUMMYABIL243_DUMMYABIL243",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4055,
-            "name": "DUMMYABIL244_DUMMYABIL244",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4056,
-            "name": "DUMMYABIL245_DUMMYABIL245",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4057,
-            "name": "DUMMYABIL246_DUMMYABIL246",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4058,
-            "name": "DUMMYABIL247_DUMMYABIL247",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4059,
-            "name": "DUMMYABIL248_DUMMYABIL248",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4060,
-            "name": "DUMMYABIL249_DUMMYABIL249",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4061,
-            "name": "DUMMYABIL250_DUMMYABIL250",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4062,
-            "name": "DUMMYABIL251_DUMMYABIL251",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4063,
-            "name": "DUMMYABIL252_DUMMYABIL252",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4064,
-            "name": "DUMMYABIL253_DUMMYABIL253",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4065,
-            "name": "DUMMYABIL254_DUMMYABIL254",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4066,
-            "name": "DUMMYABIL255_DUMMYABIL255",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4067,
-            "name": "DUMMYABIL256_DUMMYABIL256",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4068,
-            "name": "DUMMYABIL257_DUMMYABIL257",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4069,
-            "name": "DUMMYABIL258_DUMMYABIL258",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4070,
-            "name": "DUMMYABIL259_DUMMYABIL259",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4071,
-            "name": "DUMMYABIL260_DUMMYABIL260",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4072,
-            "name": "DUMMYABIL261_DUMMYABIL261",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4073,
-            "name": "DUMMYABIL262_DUMMYABIL262",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4074,
-            "name": "DUMMYABIL263_DUMMYABIL263",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4075,
-            "name": "DUMMYABIL264_DUMMYABIL264",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4076,
-            "name": "DUMMYABIL265_DUMMYABIL265",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4077,
-            "name": "DUMMYABIL266_DUMMYABIL266",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4078,
-            "name": "DUMMYABIL267_DUMMYABIL267",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4079,
-            "name": "DUMMYABIL268_DUMMYABIL268",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4080,
-            "name": "DUMMYABIL269_DUMMYABIL269",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4081,
-            "name": "DUMMYABIL270_DUMMYABIL270",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4082,
-            "name": "DUMMYABIL271_DUMMYABIL271",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4083,
-            "name": "DUMMYABIL272_DUMMYABIL272",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4084,
-            "name": "DUMMYABIL273_DUMMYABIL273",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4085,
-            "name": "DUMMYABIL274_DUMMYABIL274",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4086,
-            "name": "DUMMYABIL275_DUMMYABIL275",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4087,
-            "name": "DUMMYABIL276_DUMMYABIL276",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4088,
-            "name": "DUMMYABIL277_DUMMYABIL277",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4089,
-            "name": "DUMMYABIL278_DUMMYABIL278",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4090,
-            "name": "DUMMYABIL279_DUMMYABIL279",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4091,
-            "name": "DUMMYABIL280_DUMMYABIL280",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4092,
-            "name": "DUMMYABIL281_DUMMYABIL281",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4093,
-            "name": "DUMMYABIL282_DUMMYABIL282",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4094,
-            "name": "DUMMYABIL283_DUMMYABIL283",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4095,
-            "name": "DUMMYABIL284_DUMMYABIL284",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4096,
-            "name": "DUMMYABIL285_DUMMYABIL285",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4097,
-            "name": "DUMMYABIL286_DUMMYABIL286",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4098,
-            "name": "DUMMYABIL287_DUMMYABIL287",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4099,
-            "name": "DUMMYABIL288_DUMMYABIL288",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4100,
-            "name": "DUMMYABIL289_DUMMYABIL289",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4101,
-            "name": "DUMMYABIL290_DUMMYABIL290",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4102,
-            "name": "DUMMYABIL291_DUMMYABIL291",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4103,
-            "name": "DUMMYABIL292_DUMMYABIL292",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4104,
-            "name": "DUMMYABIL293_DUMMYABIL293",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4105,
-            "name": "DUMMYABIL294_DUMMYABIL294",
-            "target": "None"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4106,
-            "name": "DUMMYABIL295_DUMMYABIL295",
             "target": "None"
         },
         {
@@ -12880,19 +9572,6 @@
             "id": 4107,
             "name": "BATTERYOVERCHARGE_BATTERYOVERCHARGE",
             "target": "Unit"
-        },
-        {
-            "allow_autocast": false,
-            "allow_minimap": false,
-            "buff": [],
-            "cast_range": 0.0,
-            "cooldown": 0,
-            "effect": [],
-            "energy_cost": 0,
-            "id": 4108,
-            "name": "DUMMYABIL296_DUMMYABIL296",
-            "remaps_to_ability_id": 3659,
-            "target": "None"
         },
         {
             "allow_autocast": false,
@@ -12939,8 +9618,25 @@
             "cooldown": 0,
             "effect": [],
             "energy_cost": 0,
-            "id": 4113,
-            "name": "LOADOUTSPRAY_LOADOUTSPRAY1",
+            "id": 4119,
+            "name": "MORPHTOBANELING_BANELING",
+            "target": {
+                "Morph": {
+                    "produces": 9
+                }
+            }
+        },
+        {
+            "allow_autocast": false,
+            "allow_minimap": false,
+            "buff": [],
+            "cast_range": 0.0,
+            "cooldown": 0,
+            "effect": [],
+            "energy_cost": 0,
+            "id": 4120,
+            "name": "MORPHTOBANELING_CANCEL",
+            "remaps_to_ability_id": 3659,
             "target": "None"
         }
     ],
@@ -14193,9 +10889,6 @@
                     "ability": 820
                 },
                 {
-                    "ability": 822
-                },
-                {
                     "ability": 710,
                     "requirements": [
                         {
@@ -14547,7 +11240,7 @@
                 }
             ],
             "accepts_addon": false,
-            "armor": 1.0,
+            "armor": 0.0,
             "attributes": [
                 "Armored",
                 "Mechanical",
@@ -14560,7 +11253,7 @@
             "is_structure": true,
             "is_townhall": false,
             "is_worker": false,
-            "max_health": 150.0,
+            "max_health": 100.0,
             "minerals": 100,
             "name": "AutoTurret",
             "needs_creep": false,
@@ -15072,9 +11765,6 @@
             "abilities": [
                 {
                     "ability": 790
-                },
-                {
-                    "ability": 793
                 },
                 {
                     "ability": 799
@@ -16126,7 +12816,7 @@
                 "Mechanical"
             ],
             "detection_range": 11.0,
-            "gas": 200,
+            "gas": 150,
             "id": 56,
             "is_addon": false,
             "is_flying": true,
@@ -16148,7 +12838,7 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
-            "time": 960.0,
+            "time": 768.0,
             "weapons": []
         },
         {
@@ -17236,7 +13926,7 @@
             "radius": 0.375,
             "sight": 10.0,
             "size": 0,
-            "speed": 1.875,
+            "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
@@ -17420,11 +14110,11 @@
             "radius": 0.5,
             "sight": 10.0,
             "size": 0,
-            "speed": 2.25,
+            "speed": 2.5,
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
-            "time": 592.0,
+            "time": 512.0,
             "weapons": []
         },
         {
@@ -17718,7 +14408,7 @@
             "radius": 0.5,
             "sight": 11.0,
             "size": 0,
-            "speed": 1.875,
+            "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
             "time": 480.0,
@@ -18081,7 +14771,7 @@
             "needs_power": false,
             "race": "Zerg",
             "radius": 2.75,
-            "sight": 10.0,
+            "sight": 12.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
@@ -18089,14 +14779,7 @@
             "weapons": []
         },
         {
-            "abilities": [
-                {
-                    "ability": 1733
-                },
-                {
-                    "ability": 1
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -18119,7 +14802,7 @@
             "needs_power": false,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -18823,7 +15506,7 @@
             "normal_mode": 86,
             "race": "Zerg",
             "radius": 2.75,
-            "sight": 11.0,
+            "sight": 12.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
@@ -19203,18 +15886,18 @@
                     "ability": 1
                 },
                 {
-                    "ability": 80,
-                    "requirements": [
-                        {
-                            "building": 96
-                        }
-                    ]
-                },
-                {
                     "ability": 1390,
                     "requirements": [
                         {
                             "upgrade": 64
+                        }
+                    ]
+                },
+                {
+                    "ability": 4119,
+                    "requirements": [
+                        {
+                            "building": 96
                         }
                     ]
                 }
@@ -19521,7 +16204,7 @@
             "needs_geyser": false,
             "needs_power": false,
             "race": "Zerg",
-            "radius": 1.0,
+            "radius": 0.875,
             "sight": 9.0,
             "size": 0,
             "speed": 2.953125,
@@ -19853,7 +16536,7 @@
             "radius": 1.0,
             "sight": 12.0,
             "size": 0,
-            "speed": 1.40625,
+            "speed": 1.6015625,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
             "time": 541.34765625,
@@ -20504,7 +17187,7 @@
             "needs_power": false,
             "normal_mode": 109,
             "race": "Zerg",
-            "radius": 1.0,
+            "radius": 0.875,
             "sight": 5.0,
             "size": 0,
             "speed_creep_mul": 1.0,
@@ -20788,7 +17471,7 @@
             "normal_mode": 87,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -20827,7 +17510,7 @@
             "normal_mode": 87,
             "race": "Zerg",
             "radius": 1.0,
-            "sight": 11.0,
+            "sight": 10.0,
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
@@ -22679,7 +19362,7 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
-            "time": 196.0,
+            "time": 272.0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -22722,7 +19405,7 @@
                 "Armored",
                 "Mechanical"
             ],
-            "gas": 150,
+            "gas": 125,
             "id": 689,
             "is_addon": false,
             "is_flying": true,
@@ -23479,7 +20162,7 @@
                 "Armored",
                 "Mechanical"
             ],
-            "gas": 150,
+            "gas": 125,
             "id": 734,
             "is_addon": false,
             "is_flying": true,
@@ -24372,7 +21055,7 @@
             "sight": 9.0,
             "size": 0,
             "speed_creep_mul": 1.0,
-            "start_energy": 100,
+            "start_energy": 78,
             "supply": 0.0,
             "time": 640.0,
             "weapons": []
@@ -24853,15 +21536,6 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 1280.0
-            },
-            "id": 26,
-            "name": "GhostMoebiusReactor"
-        },
-        {
-            "cost": {
-                "gas": 100,
-                "minerals": 100,
                 "time": 2560.0
             },
             "id": 27,
@@ -24970,7 +21644,7 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 39,
             "name": "ProtossGroundWeaponsLevel1"
@@ -24979,7 +21653,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 40,
             "name": "ProtossGroundWeaponsLevel2"
@@ -24988,7 +21662,7 @@
             "cost": {
                 "gas": 200,
                 "minerals": 200,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 41,
             "name": "ProtossGroundWeaponsLevel3"
@@ -24997,7 +21671,7 @@
             "cost": {
                 "gas": 100,
                 "minerals": 100,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 42,
             "name": "ProtossGroundArmorsLevel1"
@@ -25006,7 +21680,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 43,
             "name": "ProtossGroundArmorsLevel2"
@@ -25015,7 +21689,7 @@
             "cost": {
                 "gas": 200,
                 "minerals": 200,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 44,
             "name": "ProtossGroundArmorsLevel3"
@@ -25024,7 +21698,7 @@
             "cost": {
                 "gas": 150,
                 "minerals": 150,
-                "time": 2880.0
+                "time": 2720.0
             },
             "id": 45,
             "name": "ProtossShieldsLevel1"
@@ -25033,7 +21707,7 @@
             "cost": {
                 "gas": 225,
                 "minerals": 225,
-                "time": 3440.0
+                "time": 3240.0
             },
             "id": 46,
             "name": "ProtossShieldsLevel2"
@@ -25042,7 +21716,7 @@
             "cost": {
                 "gas": 300,
                 "minerals": 300,
-                "time": 4000.0
+                "time": 3760.0
             },
             "id": 47,
             "name": "ProtossShieldsLevel3"
@@ -25571,9 +22245,9 @@
         },
         {
             "cost": {
-                "gas": 150,
-                "minerals": 150,
-                "time": 2720.0
+                "gas": 125,
+                "minerals": 125,
+                "time": 2240.0
             },
             "id": 136,
             "name": "BansheeSpeed"
@@ -25702,15 +22376,6 @@
                 "time": 1760.0
             },
             "id": 297,
-            "name": "EnhancedShockwaves"
-        },
-        {
-            "cost": {
-                "gas": 150,
-                "minerals": 150,
-                "time": 1760.0
-            },
-            "id": 298,
             "name": "MicrobialShroud"
         },
         {
@@ -25719,7 +22384,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 299,
+            "id": 298,
             "name": "SunderingImpact"
         },
         {
@@ -25728,7 +22393,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 300,
+            "id": 299,
             "name": "AmplifiedShielding"
         },
         {
@@ -25737,7 +22402,7 @@
                 "minerals": 100,
                 "time": 2240.0
             },
-            "id": 301,
+            "id": 300,
             "name": "PsionicAmplifiers"
         },
         {
@@ -25746,7 +22411,7 @@
                 "minerals": 100,
                 "time": 1280.0
             },
-            "id": 302,
+            "id": 301,
             "name": "SecretedCoating"
         }
     ]

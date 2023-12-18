@@ -25,3 +25,6 @@ produces = 41 # STARPORTTECHLAB
 [488.target.BuildInstant] # BUILD_REACTOR_STARPORT
 produces = 42 # STARPORTREACTOR
 
+[4119.target.Morph] # MORPHTOBANELING_BANELING
+produces = 9 # BANELING
+
