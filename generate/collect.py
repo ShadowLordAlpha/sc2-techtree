@@ -259,6 +259,10 @@ class MyBot(BotAI):
             if a._proto.tech_alias:
                 alias = min(a._proto.tech_alias)
 
+        tech_aliases = [
+            UnitTypeId(tech_alias).value for tech_alias in a._proto.tech_alias if tech_alias in self._game_data.units
+        ]
+
         is_worker = a.id in {UnitTypeId.PROBE, UnitTypeId.DRONE, UnitTypeId.SCV}
         is_townhall = a.id in {
             UnitTypeId.NEXUS,
@@ -354,6 +358,8 @@ class MyBot(BotAI):
             "minerals": a._proto.mineral_cost,
             "gas": a._proto.vespene_cost,
             "time": a._proto.build_time,
+            "tech_alias": tech_aliases,
+            "unit_alias": a._proto.unit_alias,
         }
 
     async def on_start(self) -> None:
