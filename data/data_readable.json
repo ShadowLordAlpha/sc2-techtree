@@ -9720,7 +9720,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 1200.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -9823,7 +9825,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 2.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -9854,7 +9858,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 2.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -9912,7 +9918,9 @@
             "speed": 0.9375,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 78.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -9968,7 +9976,9 @@
             "speed": 2.5,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10032,7 +10042,9 @@
             "speed": 2.5,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 320.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10095,7 +10107,9 @@
             "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 2000.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 6,
@@ -10138,7 +10152,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 200,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10188,7 +10204,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10240,7 +10258,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 12,
             "weapons": [
                 {
                     "attacks": 2,
@@ -10301,7 +10321,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 12,
             "weapons": [
                 {
                     "attacks": 1,
@@ -10362,7 +10384,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 12,
             "weapons": [
                 {
                     "attacks": 1,
@@ -10423,7 +10447,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 12,
             "weapons": [
                 {
                     "attacks": 1,
@@ -10484,7 +10510,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 12,
             "weapons": [
                 {
                     "attacks": 1,
@@ -10558,7 +10586,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -15.0,
+            "tech_alias": [],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10593,7 +10623,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10624,7 +10656,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10694,7 +10728,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10782,7 +10818,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 560.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10824,7 +10862,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -10879,7 +10919,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10910,7 +10952,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -10953,7 +10997,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11036,7 +11082,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11119,7 +11167,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11208,7 +11258,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11249,7 +11301,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11290,7 +11344,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 16.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -11344,7 +11400,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [
+                33
+            ],
             "time": 68.66796875,
+            "unit_alias": 33,
             "weapons": [
                 {
                     "attacks": 1,
@@ -11413,7 +11473,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 720.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -11483,7 +11545,11 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [
+                1940
+            ],
             "time": 41.44140625,
+            "unit_alias": 35,
             "weapons": [
                 {
                     "attacks": 1,
@@ -11551,7 +11617,11 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [
+                1940
+            ],
             "time": 672.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -11622,7 +11692,11 @@
             "speed": 0.9375,
             "speed_creep_mul": 1.0,
             "supply": -15.0,
+            "tech_alias": [
+                18
+            ],
             "time": 32.0,
+            "unit_alias": 18,
             "weapons": []
         },
         {
@@ -11664,7 +11738,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                5
+            ],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11696,7 +11774,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                6
+            ],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11751,7 +11833,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                5
+            ],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11783,7 +11869,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                6
+            ],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11825,7 +11915,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                5
+            ],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11857,7 +11951,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                6
+            ],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -11915,7 +12013,11 @@
             "speed": 0.9375,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                27
+            ],
             "time": 32.0,
+            "unit_alias": 27,
             "weapons": []
         },
         {
@@ -11973,7 +12075,11 @@
             "speed": 0.9375,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                28
+            ],
             "time": 32.0,
+            "unit_alias": 28,
             "weapons": []
         },
         {
@@ -12123,7 +12229,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 272.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -12191,7 +12299,11 @@
             "speed": 0.9375,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                21
+            ],
             "time": 32.0,
+            "unit_alias": 21,
             "weapons": []
         },
         {
@@ -12227,7 +12339,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [
+                19
+            ],
             "time": 20.80078125,
+            "unit_alias": 19,
             "weapons": []
         },
         {
@@ -12286,7 +12402,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -12350,7 +12468,9 @@
             "speed": 3.75,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 720.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -12430,7 +12550,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 75,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -12504,7 +12626,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -12574,7 +12698,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 4,
@@ -12657,7 +12783,9 @@
             "speed": 4.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -12734,7 +12862,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 672.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -12794,7 +12924,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -12871,7 +13003,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 768.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -12933,7 +13067,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 1440.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -12960,7 +13096,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13020,7 +13158,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -15.0,
+            "tech_alias": [],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13052,7 +13192,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13083,7 +13225,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13173,7 +13317,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13281,7 +13427,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 720.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13323,7 +13471,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13365,7 +13515,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13408,7 +13560,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -13482,7 +13636,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13518,7 +13674,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13554,7 +13712,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13596,7 +13756,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13660,7 +13822,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13746,7 +13910,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -13806,7 +13972,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 608.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -13876,7 +14044,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 672.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -13963,7 +14133,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 880.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -14037,7 +14209,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 880.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -14147,7 +14321,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 512.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14203,7 +14379,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 560.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -14276,7 +14454,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 1440.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14330,7 +14510,9 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 963.19921875,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14389,7 +14571,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14444,7 +14628,9 @@
             "speed": 2.015625,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14496,7 +14682,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 880.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -14674,7 +14862,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 272.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -14735,7 +14925,9 @@
             "speed": 7.5,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -14808,18 +15000,13 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
+            "tech_alias": [],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
-            "abilities": [
-                {
-                    "ability": 1733
-                },
-                {
-                    "ability": 1
-                }
-            ],
+            "abilities": [],
             "accepts_addon": false,
             "armor": 0.0,
             "attributes": [
@@ -14846,7 +15033,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 240.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14877,7 +15066,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -14920,7 +15111,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15027,7 +15220,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 560.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15065,7 +15260,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15155,7 +15352,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15193,7 +15392,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1040.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15228,7 +15429,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15276,7 +15479,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15316,7 +15521,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15364,7 +15571,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 880.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15408,7 +15617,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -15468,7 +15679,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -15547,7 +15760,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
+            "tech_alias": [
+                86
+            ],
             "time": 1280.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15603,7 +15820,12 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -6.0,
+            "tech_alias": [
+                86,
+                100
+            ],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15686,7 +15908,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                92
+            ],
             "time": 1600.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15722,7 +15948,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -15889,7 +16117,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 272.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -15966,7 +16196,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 384.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16050,7 +16282,9 @@
             "speed": 0.64453125,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [],
             "time": 400.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -16117,7 +16351,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 528.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16177,7 +16413,9 @@
             "speed": 4.0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 528.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16247,7 +16485,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 880.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16324,7 +16564,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 432.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16418,7 +16660,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 75,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -16479,7 +16723,9 @@
             "speed": 3.375,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16525,7 +16771,9 @@
             "speed": 1.40625,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -16576,7 +16824,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 541.34765625,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -16623,7 +16873,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 18.962890625,
+            "unit_alias": 9,
             "weapons": []
         },
         {
@@ -16658,7 +16910,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 23.328125,
+            "unit_alias": 104,
             "weapons": []
         },
         {
@@ -16693,7 +16947,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 24.291015625,
+            "unit_alias": 107,
             "weapons": []
         },
         {
@@ -16771,7 +17027,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 9.69140625,
+            "unit_alias": 110,
             "weapons": []
         },
         {
@@ -16806,7 +17064,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 24.291015625,
+            "unit_alias": 105,
             "weapons": []
         },
         {
@@ -16841,7 +17101,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 24.291015625,
+            "unit_alias": 7,
             "weapons": []
         },
         {
@@ -16878,7 +17140,11 @@
             "speed_creep_mul": 1.0,
             "start_energy": 60,
             "supply": 2.0,
+            "tech_alias": [
+                126
+            ],
             "time": 15.33203125,
+            "unit_alias": 126,
             "weapons": []
         },
         {
@@ -16951,7 +17217,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 25,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -17039,7 +17307,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 75,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 10.962890625,
+            "unit_alias": 111,
             "weapons": []
         },
         {
@@ -17069,7 +17339,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -17131,7 +17403,11 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -8.0,
+            "tech_alias": [
+                106
+            ],
             "time": 266.6796875,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -17183,7 +17459,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -15.0,
+            "tech_alias": [
+                18
+            ],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -17229,7 +17509,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [],
             "time": 22.0,
+            "unit_alias": 109,
             "weapons": []
         },
         {
@@ -17285,7 +17567,11 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -15.0,
+            "tech_alias": [
+                18
+            ],
             "time": 560.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -17368,7 +17654,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                62
+            ],
             "time": 160.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -17422,7 +17712,11 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -15.0,
+            "tech_alias": [
+                18
+            ],
             "time": 32.0,
+            "unit_alias": 132,
             "weapons": []
         },
         {
@@ -17470,7 +17764,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [
+                81
+            ],
             "time": 24.0,
+            "unit_alias": 81,
             "weapons": []
         },
         {
@@ -17512,7 +17810,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                87
+            ],
             "time": 18.9609375,
+            "unit_alias": 87,
             "weapons": []
         },
         {
@@ -17551,7 +17853,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [
+                87
+            ],
             "time": 240.0,
+            "unit_alias": 87,
             "weapons": []
         },
         {
@@ -17606,7 +17912,9 @@
             "speed": 1.0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 16.0,
+            "unit_alias": 98,
             "weapons": []
         },
         {
@@ -17661,7 +17969,9 @@
             "speed": 1.0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 16.0,
+            "unit_alias": 99,
             "weapons": []
         },
         {
@@ -17713,7 +18023,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -17773,7 +18085,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 320.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -17840,7 +18154,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 75,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 50,
             "weapons": [
                 {
                     "attacks": 1,
@@ -17897,7 +18213,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18007,7 +18325,9 @@
             "speed": 0.5625,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18063,7 +18383,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18113,7 +18435,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18178,7 +18502,9 @@
             "speed": 2.5,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 672.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18220,7 +18546,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18280,7 +18608,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18357,7 +18687,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18417,7 +18749,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18468,7 +18802,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 320.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18522,7 +18858,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18560,7 +18898,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 42.0,
+            "unit_alias": 494,
             "weapons": []
         },
         {
@@ -18622,7 +18962,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18688,7 +19030,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 832.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18740,7 +19084,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 5.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18818,7 +19164,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -18882,7 +19230,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18947,7 +19297,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -18988,7 +19340,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [
+                498
+            ],
             "time": 52.0,
+            "unit_alias": 498,
             "weapons": []
         },
         {
@@ -19025,7 +19381,9 @@
             "speed": 3.375,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19082,7 +19440,9 @@
             "speed": 2.953125,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 553.328125,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19129,7 +19489,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 42.0,
+            "unit_alias": 502,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19192,7 +19554,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 1280.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19221,7 +19585,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19248,7 +19614,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19275,7 +19643,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19302,7 +19672,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19338,7 +19710,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19399,7 +19773,9 @@
             "speed": 2.75,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 272.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19462,7 +19838,9 @@
             "speed": 3.375,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 960.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 2,
@@ -19506,7 +19884,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 9.69140625,
+            "unit_alias": 688,
             "weapons": []
         },
         {
@@ -19562,7 +19942,11 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 6.0,
+            "tech_alias": [
+                52
+            ],
             "time": 42.0,
+            "unit_alias": 52,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19640,7 +20024,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 720.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19709,7 +20095,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 8.0,
+            "unit_alias": 489,
             "weapons": []
         },
         {
@@ -19764,7 +20152,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 800.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19806,7 +20196,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19837,7 +20229,9 @@
             "speed": 1.40625,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19888,7 +20282,9 @@
             "speed": 1.5,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 640.015625,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -19929,7 +20325,9 @@
             "speed": 1.40625,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -19980,7 +20378,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 640.015625,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20027,7 +20427,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 24.291015625,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20097,7 +20499,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 8.80078125,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20128,7 +20532,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 80.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20180,7 +20586,9 @@
             "speed": 4.25,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20224,7 +20632,11 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [
+                689
+            ],
             "time": 64.66796875,
+            "unit_alias": 689,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20261,7 +20673,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20320,7 +20734,9 @@
             "speed": 4.0,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 311,
             "weapons": []
         },
         {
@@ -20346,7 +20762,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20398,7 +20816,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 838,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20459,7 +20879,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20521,7 +20943,9 @@
             "speed": 2.25,
             "speed_creep_mul": 1.0,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20575,7 +20999,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20636,7 +21062,9 @@
             "speed": 2.8125,
             "speed_creep_mul": 1.0,
             "supply": 3.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20719,7 +21147,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": 4.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20779,7 +21209,9 @@
             "speed": 3.5,
             "speed_creep_mul": 1.0,
             "supply": 0.5,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": [
                 {
                     "attacks": 1,
@@ -20849,7 +21281,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -2.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20887,7 +21321,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20917,7 +21353,9 @@
             "speed": 1.875,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -20987,7 +21425,11 @@
             "speed": 0.78515625,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [
+                106
+            ],
             "time": 266.6796875,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21020,7 +21462,12 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": -8.0,
+            "tech_alias": [
+                60,
+                60
+            ],
             "time": 0.0,
+            "unit_alias": 60,
             "weapons": []
         },
         {
@@ -21065,7 +21512,9 @@
             "speed": 5.0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21109,7 +21558,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 78,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 640.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21149,7 +21600,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 1.0,
+            "tech_alias": [],
             "time": 12.0,
+            "unit_alias": 82,
             "weapons": []
         },
         {
@@ -21199,7 +21652,11 @@
             "speed_creep_mul": 1.0,
             "start_energy": 50,
             "supply": -8.0,
+            "tech_alias": [
+                106
+            ],
             "time": 12.0,
+            "unit_alias": 129,
             "weapons": []
         },
         {
@@ -21243,7 +21700,9 @@
             "speed_creep_mul": 1.0,
             "start_energy": 200,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21270,7 +21729,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21301,7 +21762,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 480.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21332,7 +21795,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         },
         {
@@ -21363,7 +21828,9 @@
             "size": 0,
             "speed_creep_mul": 1.0,
             "supply": 0.0,
+            "tech_alias": [],
             "time": 0.0,
+            "unit_alias": 0,
             "weapons": []
         }
     ],
