@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "SC2PATH": "/media/ssd480/Games/starcraft4/pfx/drive_c/Program Files (x86)/StarCraft II",
+                "SC2PF": "WineLinux",
+                "WINE": "/usr/bin/wine"
+            }
+        }
+    ]
+}

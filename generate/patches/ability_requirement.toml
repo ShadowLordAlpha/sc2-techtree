@@ -28,9 +28,6 @@ requirements = [ { "addon" =  5 }, { "building" = 29 } ] # Attached tech lab, Ar
 [27.596] # Factory - TRAIN_HELLBAT
 requirements = [ { "building" = 29 } ] # Armory
 
-[27.597] # Factory - TRAIN_CYCLONE
-requirements = [ { "addon" =  5 } ] # Attached tech lab
-
 [28.621] # Starport - STARPORTTRAIN_BANSHEE
 requirements = [ { "addon" =  5 } ] # Attached tech lab
 
@@ -102,6 +99,9 @@ requirements = [ { "building" = 29 } ] # Armory
 
 [55.392] # Banshee - BEHAVIOR_CLOAKON_BANSHE
 requirements = [ { "upgrade" =  20 } ] # Banshee cloack
+
+[56.3747] # Raven - EFFECT_INTERFERENCEMATRIX
+requirements = [ { "upgrade" = 299 } ] # INTERFERENCEMATRIX
 
 [57.401] # Battlecruiser - YAMATO_YAMATOGUN
 requirements = [ { "upgrade" = 76 } ] # BattlecruiserEnableSpecializations

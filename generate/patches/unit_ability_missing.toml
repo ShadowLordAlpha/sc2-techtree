@@ -118,11 +118,11 @@ requirements = [ { "addon_to" = 27 } ] # Add-on to factory
 
 [[5]] # TechLab RESEARCH_RAVENCORVIDREACTOR
 ability = 793
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
+requirements = [ { "addon_to" = 28 } ] # Add-on to starport
 
 [[5]] # TechLab RESEARCH_BANSHEECLOAKINGFIELD
 ability = 790
-requirements = [ { "addon_to" = 28 } ] # Add-on to startport
+requirements = [ { "addon_to" = 28 } ] # Add-on to starport
 
 [[39]] # FactoryTechlab RESEARCH_DRILLINGCLAWS
 ability = 764
